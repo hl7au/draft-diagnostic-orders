@@ -27,3 +27,5 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+/fsh-generated/*
+/input/fsh/instances/*.fsh-
