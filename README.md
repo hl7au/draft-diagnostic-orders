@@ -1,2 +1,1 @@
-# draft-diagnostic-orders
-A proof of concept Diagnostic Orders implementation guide.
+**Diagnostic Orders implementation guide**: [Continuous Integration Build](http://build.fhir.org/ig/hl7au/draft-diagnostic-orders/branches/main)
