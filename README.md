@@ -1,1 +1,1 @@
-**Diagnostic Orders implementation guide**: [Continuous Integration Build](http://build.fhir.org/ig/hl7au/draft-diagnostic-orders/branches/main)
+**Diagnostic Orders implementation guide**: [Continuous Integration Build](http://build.fhir.org/ig/hl7au/draft-diagnostic-orders/branches/master)
