@@ -7,7 +7,6 @@ Usage: #inline
 * code = $loinc#82810-3 "Pregnancy status"
   * text = "Pregnancy status"
 * subject = Reference(EOrdersPatientSmith)
-  * display = "John Smith"
 * effectiveDateTime = "2022-09-09T09:25:03+10:00"
 * valueCodeableConcept = $sct#77386006 "Pregnancy confirmed"
   * text = "Pregnant"

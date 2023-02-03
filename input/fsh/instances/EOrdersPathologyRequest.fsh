@@ -29,7 +29,7 @@ Usage: #example
   * text = "Measurement of ovary antibody"
 * quantityQuantity.value = 1
 * subject = Reference(EOrdersPatientSmith)
-  * display = "John Smith"
+  * display = "Joan Smith"
 * authoredOn = "2022-09-09T09:25:03+10:00"
 * requester
   * identifier[+] 
