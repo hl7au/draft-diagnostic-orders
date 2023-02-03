@@ -1,5 +1,5 @@
 Instance: EOrders-Inline-1-Coverage
-InstanceOf: Coverage
+InstanceOf: EOrdersCoverage
 Usage: #inline
 * id = "1"
 * status = #active

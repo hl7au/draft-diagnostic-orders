@@ -6,7 +6,7 @@ Usage: #example
 * id = "8dbe2623-c7f4-469e-a10a-a2073a62dd13"
 * contained[0] = EOrders-Inline-1-Coverage
 * contained[+] = EOrders-Inline-2-Encounter
-//* contained[+] = EOrders-Inline-3-PregnancyStatusObservation
+* contained[+] = EOrders-Inline-3-PregnancyStatusObservation
 * contained[+] = EOrders-Inline-4-DateOfLastMenstrualPeriod
 * contained[+] = EOrders-Inline-5-GestationalAgeObservation
 
@@ -42,8 +42,8 @@ Usage: #example
   * display = "Dr Jane Doe"
 * encounter = Reference(EOrders-Inline-2-Encounter)
 * insurance = Reference(EOrders-Inline-1-Coverage)
-//* supportingInfo[0] = Reference(EOrders-Inline-3-PregnancyStatusObservation)
-//  * display = "Pregnancy status"
+* supportingInfo[0] = Reference(EOrders-Inline-3-PregnancyStatusObservation)
+  * display = "Pregnancy status"
 * supportingInfo[+] = Reference(EOrders-Inline-4-DateOfLastMenstrualPeriod)
   * display = "Date of last menstrual period"
 * supportingInfo[+] = Reference(EOrders-Inline-5-GestationalAgeObservation)
