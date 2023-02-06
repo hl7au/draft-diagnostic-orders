@@ -20,8 +20,8 @@ publisher:
 jurisdiction: urn:iso:std:iso:3166#AU
 
 dependencies:
-  hl7.fhir.au.base: current
-  hl7.fhir.au.core: current
+  hl7.fhir.au.base: 4.1.0-ballot
+  hl7.fhir.au.core: 0.0.1
 #  hl7.fhir.au.pd: current
 #  au.csiro.fhir.au-primarycare: current
 #  hl7.fhir.uv.sdc: current
