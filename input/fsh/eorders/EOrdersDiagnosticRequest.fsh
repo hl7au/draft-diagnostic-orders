@@ -62,7 +62,7 @@ Description: "EOrders Diagnositic Service Request Profile"
     pregnancystatus 0..1 MS and
     gestationalage 0..1 MS and
     lastmenstrualperiod 0..1 MS 
-//* supportingInfo[pregnancystatus] only Reference(ObservationPregnancyStatusUvIps)
+* supportingInfo[pregnancystatus] only Reference(AUCorePregnancyStatus)
 * supportingInfo[gestationalage] only Reference(AUCoreGestationalAge)
 * supportingInfo[lastmenstrualperiod] only Reference(AUCoreLastMenstrualPeriod)
 

@@ -14,3 +14,4 @@ Alias: $request-status = http://hl7.org/fhir/request-status
 Alias: $request-priority = http://hl7.org/fhir/request-priority
 Alias: $task-status = http://hl7.org/fhir/task-status
 Alias: $task-code = http://hl7.org/fhir/CodeSystem/task-code
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category

@@ -6,6 +6,5 @@ Usage: #inline
 * code = $sct#21840007 "Date of last menstrual period"
   * text = "Date of last menstrual period"
 * subject = Reference(EOrdersPatientSmith)
-  * display = "John Smith"
 * effectiveDateTime = "2022-09-09T09:25:03+10:00"
 * valueDateTime = "2022-05-16"

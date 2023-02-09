@@ -8,10 +8,10 @@ Usage:  #example
 * name[+] 
   * use = #official
   * family = "Smith"
-  * given = "John" 
-  * prefix = "Mr"
-* gender = #male
-* birthDate = "1967-01-20"
+  * given = "Joan" 
+  * prefix = "Mrs"
+* gender = #female
+* birthDate = "1997-01-20"
 * identifier[+]
   * system = "http://ns.electronichealth.net.au/id/medicare-number"
   * value = "54164532692"
