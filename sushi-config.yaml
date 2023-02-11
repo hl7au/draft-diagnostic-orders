@@ -24,7 +24,8 @@ dependencies:
     version: 4.1.0-ballot
     uri: http://build.fhir.org/ig/hl7au/au-fhir-base/package.tgz
 
-  hl7.fhir.au.core: dev
+  hl7.fhir.au.core:
+    version: 0.0.1
 
 #  hl7.fhir.au.pd: current
 #  au.csiro.fhir.au-primarycare: current
