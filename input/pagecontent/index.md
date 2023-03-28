@@ -24,7 +24,8 @@ This guide is divided into several pages which are listed at the top of each pag
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
-* TBD
+* [Genie Solutions](https://www.geniesolutionssoftware.com.au/)
+* [Sonic Healthcare](http://https://www.sonichealthcare.com/)
 
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
 implementation. This implementation guide will be used as the basis for Australian connectathon events.
