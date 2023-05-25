@@ -1,8 +1,8 @@
 Profile: EOrdersConsentWithdrawl
 Parent: http://hl7.org/fhir/StructureDefinition/Consent
 Id: eorders-consentwithdrawl
-Title: "EOrders Consent Withdrawl"
-Description: "EOrders Withdraw Consent to upload result to MHR"
+Title: "Diagnostic Consent Withdrawl"
+Description: "Diagnostic Withdraw Consent to upload result to MHR"
 * status MS
 * status = #active
 * scope MS

@@ -1,9 +1,9 @@
 Profile: EOrdersPlacerGroupNumber
 Parent: AULocalOrderIdentifier
 Id: eorders-placergroupnumber
-Title: "EOrders Placer Group Number"
-Description: "EOrders Placer Group Number profile"
-* . ^short = "EOrders Placer Group Number"
+Title: "Diagnostic Placer Group Number"
+Description: "Diagnostic Placer Group Number"
+* . ^short = "Diagnostic Placer Group Number"
 * type ^short = "Coded identifier type for placer group number"
   * coding 1..1    
   * coding = $v2-0203#PGN

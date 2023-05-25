@@ -1,8 +1,8 @@
 Profile: EOrdersDiagnosticRequest
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest
 Id: eorders-diagnosticrequest
-Title: "EOrders Diagnostic Request"
-Description: "EOrders Diagnositic Service Request Profile"
+Title: "Diagnostic Service Request"
+Description: "Diagnositic Service Request"
 
 * extension contains ResultCopiesTo named copiesto 0..* MS
 * extension contains EOrdersServiceRequestFasting named request-fasting 0..1 MS

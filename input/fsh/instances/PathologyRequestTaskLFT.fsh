@@ -1,6 +1,6 @@
 Instance:  PathologyRequestTaskLFT
-InstanceOf: EOrdersDiagnosticRequestTask
-Title: "eOrders Pathology Request Task LFT"
+InstanceOf: DiagnosticTaskRequest
+Title: "Diagnostic Pathology Request Task LFT"
 Usage:  #example
 * id = "1d4f3888-13b7-472d-859b-571bb7125fe2"
 * groupIdentifier

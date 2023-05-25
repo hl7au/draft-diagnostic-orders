@@ -1,8 +1,8 @@
 Profile: EOrdersPractitionerRole
 Parent: AUCorePractitionerRole
 Id: eorders-practitionerrole
-Title: "EOrders PractitionerRole"
-Description: "EOrders PractitionerRole profile"
+Title: "Diagnostic PractitionerRole"
+Description: "Diagnostic PractitionerRole profile"
 
 * . ^short = "A practitioner located at a site in an diagnostic request context"
 * identifier ^slicing.rules = #open

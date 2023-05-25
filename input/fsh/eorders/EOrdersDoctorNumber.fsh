@@ -1,8 +1,8 @@
 Profile: EOrdersDoctorNumber
 Parent: Identifier
 Id: eorders-doctornumber
-Title: "EOrders Doctor Number"
-Description: "EOrders Doctor Number profile"
+Title: "Diagnostic Doctor Number"
+Description: "Diagnostic Doctor Number"
 
 * type = $v2-0203#DN //"Doctor number"
 * value 1..1

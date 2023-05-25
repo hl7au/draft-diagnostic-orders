@@ -1,6 +1,6 @@
 Instance:  OrganizationPlacer
 InstanceOf: AUCoreOrganization
-Title: "eOrders Organization Placer"
+Title: "Diagnostic Placer Organization"
 Usage:  #example
 * id = "fdcca47c-e554-46e5-a71f-91ec855faa29"
 * identifier[+] 

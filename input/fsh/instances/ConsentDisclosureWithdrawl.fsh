@@ -1,7 +1,7 @@
 Instance:  ConsentDisclosureWithdrawl
 InstanceOf: EOrdersConsentWithdrawl
-Title: "eOrders Consent withdraw upload MHR"
-Description: "eOrders Consent to indicate do not upload to MHR"
+Title: "Diagnostic Consent withdraw upload MHR"
+Description: "Diagnostic Consent to indicate do not upload to MHR"
 Usage:  #example
 * id = "6d83978c-6507-4c1a-8099-4a7d7fe48bc0"
 * status = #active

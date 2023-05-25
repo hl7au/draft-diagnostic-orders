@@ -3,6 +3,7 @@ InstanceOf: AUCoreGestationalAge
 Usage: #inline
 * id = "5"
 * status = #final
+* category = $observation-category#social-history "Social History"
 * code.coding[0] = $sct#57036006 "Fetal gestational age"
 * code.coding[+] = $loinc#11885-1 "Gestational age Estimated from last menstrual period"
 * code.text = "Gestational Age by Last Menstrual Period (LMP)"

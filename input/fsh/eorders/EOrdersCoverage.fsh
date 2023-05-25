@@ -1,8 +1,8 @@
 Profile: EOrdersCoverage
 Parent: Coverage
 Id: eorders-coverage
-Title: "EOrders Coverage"
-Description: "EOrders Coverage profile"
+Title: "Diagnostic Coverage"
+Description: "Diagnostic Coverage"
 
 * id 0..1 MS
 * id ^short = "Unique resource identifier or contained resource access number, e.g. 1"

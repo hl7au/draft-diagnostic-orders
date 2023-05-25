@@ -1,8 +1,7 @@
 ValueSet: EOrdersCoverageStatus
 Id: eorders-coverage-status
-Title: "EOrders Coverage Status values"
+Title: "Diagnostic Coverage Status codes"
 * ^status = #active
-* ^experimental = false
-* ^description = "EOrders Coverage Status values"
+* ^description = "Diagnostic Coverage Status codes"
 * $fm-status#active
 * $fm-status#cancelled

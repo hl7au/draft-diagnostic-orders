@@ -1,8 +1,7 @@
 ValueSet: EOrdersTaskCode
 Id: eorders-taskcode
-Title: "EOrders Task codes"
-* ^experimental = false
-* ^description = "EOrders Task codes"
+Title: "Diagnostic Task codes"
+* ^description = "Diagnostic Task codes"
 * $task-code#fulfill
 * $task-code#abort
 

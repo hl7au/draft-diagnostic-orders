@@ -5,10 +5,10 @@
 id: hl7.fhir.au.draft.diagnostic-orders
 canonical: http://draft.hl7.org.au/fhir/diagnostic-orders
 name: DiagnosticOrders
-title: Diagnostic Orders
+title: Diagnostic Requests
 status: draft
 experimental: true
-version: 0.0.1
+version: 0.0.2
 license: CC0-1.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+

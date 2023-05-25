@@ -1,7 +1,7 @@
 Instance:  CreateOrderBundle
 InstanceOf: Bundle
-Title: "eOrders Create Order Transaction"
-Description: "eOrders Create Order Transaction with text ServiceRequest and Task"
+Title: "Diagnostic Request Transaction"
+Description: "Diagnostic Request Transaction with text ServiceRequest and Task"
 Usage:  #example
 * id = "73a3f109-63ec-44ad-bf01-98a4fa364d96"
 * type = #transaction
