@@ -1,7 +1,7 @@
 Profile: EOrdersServiceRequestFasting
 Parent: http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
 Id: eorders-servicerequest-fasting
-Title: "Service Request Fasting Precondition"
+Title: "Diagnostic Request Fasting Precondition extension"
 Description: "Extension to request patient fasting"
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"

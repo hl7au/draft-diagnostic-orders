@@ -1,7 +1,7 @@
 Instance:  PathologyServiceRequest
 InstanceOf: EOrdersDiagnosticRequest
-Title: "eOrders Pathology Request text"
-Description: "eOrders Pathology Request - free text test name"
+Title: "Diagnostic Pathology Request text"
+Description: "Diagnostic Pathology Request - free text test name"
 Usage:  #example
 * id = "018c4883-2359-4122-9f19-48cdd83fad0d"
 * requisition

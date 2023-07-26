@@ -1,6 +1,6 @@
 Instance:  PathologyRequestFBC
 InstanceOf: EOrdersDiagnosticRequest
-Title: "eOrders Pathology Request FBC"
+Title: "Diagnostic Pathology Request FBC"
 Usage:  #example
 * id = "681a8919-8d91-4868-a46a-ab6877ad27ea"
 * requisition

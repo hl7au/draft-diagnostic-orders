@@ -29,3 +29,4 @@ Thumbs.db
 *.bak
 /fsh-generated/*
 /input/fsh/instances/*.fsh-
+/input-cache/*

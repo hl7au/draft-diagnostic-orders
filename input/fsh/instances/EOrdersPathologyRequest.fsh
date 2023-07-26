@@ -1,7 +1,7 @@
 Instance: EOrdersPathologyRequest
 InstanceOf: EOrdersDiagnosticRequest
-Title: "EOrders Pathology Request"
-Description: "EOrders Pathology Request example"
+Title: "Diagnostic Pathology Request"
+Description: "Diagnostic Pathology Request example"
 Usage: #example
 * id = "8dbe2623-c7f4-469e-a10a-a2073a62dd13"
 * contained[0] = EOrders-Inline-1-Coverage

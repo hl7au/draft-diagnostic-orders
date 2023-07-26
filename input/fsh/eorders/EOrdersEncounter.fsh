@@ -1,8 +1,8 @@
 Profile: EOrdersEncounter
 Parent: AUBaseEncounter
 Id: eorders-encounter
-Title: "EOrders Encounter"
-Description: "Minimum Encounter profile for EOrders Diagnostic Request"
+Title: "Diagnostic Encounter"
+Description: "Minimum Encounter for Diagnostic Request"
 
 * id MS
 * status MS

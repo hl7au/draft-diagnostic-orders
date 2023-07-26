@@ -3,6 +3,7 @@ InstanceOf: AUCoreLastMenstrualPeriod
 Usage: #inline
 * id = "4"
 * status = #final
+* category = $observation-category#social-history "Social History"
 * code = $sct#21840007 "Date of last menstrual period"
   * text = "Date of last menstrual period"
 * subject = Reference(EOrdersPatientSmith)

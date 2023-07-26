@@ -1,7 +1,7 @@
 Instance:  EOrdersPatientSmith
 InstanceOf: AUCorePatient
-Title: "eOrders Patient"
-Description: "eOrders Patient - minimal with MCN"
+Title: "Diagnostic Patient"
+Description: "Diagnostic Patient - minimal with MCN"
 Usage:  #example
 * id = "1078d551-7be2-49f7-a122-c230b8757f2f"
 * active = true

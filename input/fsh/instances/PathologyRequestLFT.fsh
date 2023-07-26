@@ -1,6 +1,6 @@
 Instance:  PathologyRequestLFT
 InstanceOf: EOrdersDiagnosticRequest
-Title: "eOrders Pathology Request LFT"
+Title: "Diagnostic Pathology Request LFT"
 Usage:  #example
 * id = "3dff87af-5dac-40d5-be3d-9eaf9b3879b8"
 * requisition

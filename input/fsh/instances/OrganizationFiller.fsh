@@ -1,6 +1,6 @@
 Instance:  OrganizationFiller
 InstanceOf: AUCoreOrganization
-Title: "eOrders Organization Filler"
+Title: "Diagnostic Organization Filler"
 Usage:  #example
 * id = "67904f84-aeac-44e5-a9ec-50bbb1087977"
 * identifier[+] 

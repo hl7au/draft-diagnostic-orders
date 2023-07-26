@@ -1,8 +1,7 @@
 ValueSet: EOrdersTaskStatus
 Id: eorders-taskstatus
-Title: "EOrders Task Status codes"
-* ^experimental = false
-* ^description = "EOrders Task Status codes"
+Title: "Diagnostic Task Status codes"
+* ^description = "Diagnostic Task Status codes"
 * $task-status#requested
 * $task-status#received
 * $task-status#accepted

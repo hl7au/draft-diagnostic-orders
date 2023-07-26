@@ -1,7 +1,7 @@
 Instance:  ConsentWithdrawlFBCLFT
 InstanceOf: EOrdersConsentWithdrawl
-Title: "eOrders Consent withdraw uplod MHR FBC LFT"
-Description: "eOrders Consent to indicate do not upload to MHR"
+Title: "Diagnostic Consent withdraw uplod MHR FBC LFT"
+Description: "Diagnostic Consent to indicate do not upload to MHR"
 Usage:  #example
 * id = "880c657d-af10-4a4c-a925-dbd49075f0eb"
 * status = #active

@@ -1,7 +1,7 @@
-Instance:  BundlePathologyOrderFBCLFT
+Instance:  PathologyRequestTransactionFBCLFT
 InstanceOf: Bundle
-Title: "eOrders Create Order Transaction FBC LFT"
-Description: "eOrders Create Order Transaction with multiple coded ServiceRequest and Task"
+Title: "Diagnostic Request Transaction FBC LFT"
+Description: "Diagnostic Request Transaction with multiple coded tests (FBC LFT), diagnostic task group and 'do not send SMS' CommunicationRequest"
 Usage:  #example
 * id = "20afd601-ed83-476b-8121-ae976ea8cc44"
 * type = #transaction
@@ -23,6 +23,12 @@ Usage:  #example
 
 // Request Tasks
 * entry[+]
+  * fullUrl = "urn:uuid:28dc34e1-4999-4786-8238-9f8f8a5b78c2"
+  * resource = DiagnosticTaskGroupFBCLFT
+  * request
+    * method = #PUT
+    * url = "Task/28dc34e1-4999-4786-8238-9f8f8a5b78c2"
+* entry[+]
   * fullUrl = "urn:uuid:5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
   * resource = PathologyRequestTaskFBC
   * request
@@ -42,6 +48,14 @@ Usage:  #example
   * request
     * method = #PUT
     * url = "Consent/880c657d-af10-4a4c-a925-dbd49075f0eb"
+
+// CommunicationRequest
+* entry[+]
+  * fullUrl = "urn:uuid:66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
+  * resource = DiagnosticCommunicationRequestDoNotPerformSMS
+  * request
+    * method = #PUT
+    * url = "CommunicationRequest/66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
 
 // Referenced resources
 * entry[+]
