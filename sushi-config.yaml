@@ -21,11 +21,11 @@ jurisdiction: urn:iso:std:iso:3166#AU
 
 dependencies:
   hl7.fhir.au.base:
-    version: 4.1.0-ballot
-    uri: http://build.fhir.org/ig/hl7au/au-fhir-base/package.tgz
+    version: 4.1.0
+#    uri: http://build.fhir.org/ig/hl7au/au-fhir-base/package.tgz
 
   hl7.fhir.au.core:
-    version: 0.0.1
+    version: 0.2.0-preview
 
 #  hl7.fhir.au.pd: current
 #  au.csiro.fhir.au-primarycare: current
