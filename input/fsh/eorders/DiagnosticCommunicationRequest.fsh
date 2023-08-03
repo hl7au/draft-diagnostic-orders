@@ -13,7 +13,7 @@ Description: "Diagnostic provider to patient communication request"
 * authoredOn 1..1 MS
 * authoredOn ^short = "Date/time when communication request direction obtained"
 * doNotPerform 1..1 MS
-  * ^short = "True when SMS communication with patient is is requested to not be performed"
+  * ^short = "True when SMS communication with patient is requested to not be performed"
 * sender 1.. MS
 * sender only Reference (AUCoreOrganization)
   * ^short = "Diagnostic organization sending the SMS"
