@@ -8,7 +8,7 @@ name: DiagnosticOrders
 title: Diagnostic Requests
 status: draft
 experimental: true
-version: 0.0.3
+version: 0.0.4
 license: CC0-1.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+

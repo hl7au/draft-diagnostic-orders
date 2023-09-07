@@ -49,13 +49,37 @@ Usage:  #example
     * method = #PUT
     * url = "Consent/880c657d-af10-4a4c-a925-dbd49075f0eb"
 
-// CommunicationRequest
+// CommunicationRequest DoNotPerformSMS
 * entry[+]
   * fullUrl = "urn:uuid:66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
   * resource = DiagnosticCommunicationRequestDoNotPerformSMS
   * request
     * method = #PUT
     * url = "CommunicationRequest/66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
+
+// CommunicationRequest Task DoNotPerformSMS
+* entry[+]
+  * fullUrl = "urn:uuid:e8ed2aba-8127-47fa-b339-d9e134409f3f"
+  * resource = CommunicationRequestTaskDoNotPerformSMS
+  * request
+    * method = #PUT
+    * url = "Task/e8ed2aba-8127-47fa-b339-d9e134409f3f"
+
+// CommunicationRequest UrgentPhone 
+* entry[+]
+  * fullUrl = "urn:uuid:66ad4c83-f611-11ed-a1fc-d2cbed391bcf"
+  * resource = DiagnosticCommunicationRequestUrgentPhone
+  * request
+    * method = #PUT
+    * url = "CommunicationRequest/66ad4c83-f611-11ed-a1fc-d2cbed391bcf"
+
+// CommunicationRequest Task UrgentPhone
+* entry[+]
+  * fullUrl = "urn:uuid:509cefba-2250-449d-bfe7-ec2dd95d1e81"
+  * resource = CommunicationRequestTaskUrgentPhone
+  * request
+    * method = #PUT
+    * url = "Task/509cefba-2250-449d-bfe7-ec2dd95d1e81"
 
 // Referenced resources
 * entry[+]

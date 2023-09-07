@@ -33,3 +33,5 @@ Description: "Diagnostic provider to placer communication request.  This is used
 * category 1..1 MS
 * category = $communication-category#alert
   * ^short = "alert"
+* groupIdentifier 1..1 MS
+* groupIdentifier ^type.profile = Canonical(EOrdersPlacerGroupNumber)
