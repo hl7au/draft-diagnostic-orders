@@ -28,8 +28,8 @@ Usage:  #example
   * display = "Sullivan Nicolaides Pathology"
 * status = #active
 
-Instance:  CommunicationRequestTaskDoNotPerformSMS
-InstanceOf: CommunicationRequestTask
+Instance:  DiagnosticTaskCommunicationRequestDoNotPerformSMS
+InstanceOf: DiagnosticTaskCommunicationRequest
 Description: "Communication Request Task Do Not Perform SMS"
 Usage:  #example
 * id = "e8ed2aba-8127-47fa-b339-d9e134409f3f"

@@ -1,9 +1,9 @@
-Profile: CommunicationRequestTask
+Profile: DiagnosticTaskCommunicationRequest
 Parent: DiagnosticTaskBase
-Id: eorders-communicationtaskrequest
-Title: "Communication Request Task"
-Description: "Communication Request Task"
-* . ^short = "Communication Request Task "
+Id: diagnostic-task-communicationrequest
+Title: "Diagnostic Communication Request Task"
+Description: "Diagnostic Communication Request Task"
+* . ^short = "Diagnostic Communication Request Task"
 * meta.tag[diagnostic-task] = DiagnosticTaskTag#diagnostic-task-request
   * ^short = "diagnostic-task-request"
 * focus 1..1 MS

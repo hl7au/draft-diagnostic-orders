@@ -60,7 +60,7 @@ Usage:  #example
 // CommunicationRequest Task DoNotPerformSMS
 * entry[+]
   * fullUrl = "urn:uuid:e8ed2aba-8127-47fa-b339-d9e134409f3f"
-  * resource = CommunicationRequestTaskDoNotPerformSMS
+  * resource = DiagnosticTaskCommunicationRequestDoNotPerformSMS
   * request
     * method = #PUT
     * url = "Task/e8ed2aba-8127-47fa-b339-d9e134409f3f"
@@ -76,7 +76,7 @@ Usage:  #example
 // CommunicationRequest Task UrgentPhone
 * entry[+]
   * fullUrl = "urn:uuid:509cefba-2250-449d-bfe7-ec2dd95d1e81"
-  * resource = CommunicationRequestTaskUrgentPhone
+  * resource = DiagnosticTaskCommunicationRequestUrgentPhone
   * request
     * method = #PUT
     * url = "Task/509cefba-2250-449d-bfe7-ec2dd95d1e81"

@@ -1,6 +1,6 @@
 Profile: DiagnosticTaskRequest
 Parent: DiagnosticTaskBase
-Id: eorders-diagnosticrequesttask
+Id: diagnostic-task-request
 Title: "Diagnostic Task Request"
 Description: "Diagnostic Task Request"
 * . ^short = "Diagnostic Task Request"

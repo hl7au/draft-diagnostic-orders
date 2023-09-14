@@ -1,15 +1,13 @@
-Profile: DiagnosticCommunicationRequestUrgent
+Profile: DiagnosticCommunicationRequestProvider
 Parent: CommunicationRequest
-Id: diagnostic-communicationrequest-urgent
-Title: "Diagnostic Communication Request Urgent"
-Description: "Diagnostic provider to placer communication request.  This is used when the requesting clinician requires an urgent response to a diagnostic order.  The request should be marked as Urgent to match the Urgent communication request."
-* . ^short = "Diagnostic communication request urgent"
+Id: diagnostic-communicationrequest-provider
+Title: "Diagnostic Communication Request Provider"
+Description: "Diagnostic communication request to clinical provider.  This is used when the requesting clinician requires urgent contact relating to the results of a request.  The request should be marked as 'urgent' to match the 'urgent' communication request."
+* . ^short = "Diagnostic communication request to clinical provider"
 * status MS
 * status = #active (exactly)
   * ^short = "active"
 * priority MS
-* priority = #urgent (exactly)
-  * ^short = "urgent"
 * about 1.. MS
 * about only Reference (EOrdersDiagnosticRequest)
   * ^short = "Diagnostic request the urgent communication is about"
@@ -25,8 +23,10 @@ Description: "Diagnostic provider to placer communication request.  This is used
 * requester only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider requesting the communication"
 * recipient 1..1 MS
-* recipient only Reference (AUCorePractitionerRole)
-  * ^short = "Individual provider receiving the communication"
+* recipient only Reference (DiagnosticPractitionerRoleContact)
+  * ^short = "Individual provider receiving the communication represented as a contained PractitionerRole with communication contact details"
+  * reference 1..
+    * ^short = "Reference to contained PractitionerRole resource" 
 * medium 1..1 MS
 * medium from DiagnosticCommunicationUrgentMedium
   * ^short = "SMSWRIT | EMAILWRIT | PHONE"
@@ -35,3 +35,10 @@ Description: "Diagnostic provider to placer communication request.  This is used
   * ^short = "alert"
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = Canonical(EOrdersPlacerGroupNumber)
+
+* contained ^slicing.rules = #open
+* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.path = "$this"
+* contained contains 
+    recipient 1..1 MS
+* contained[recipient] only DiagnosticPractitionerRoleContact
