@@ -1,8 +1,9 @@
-Instance:  PathologyRequestTaskFBC
-InstanceOf: AUDiagnosticRequestTaskRequest
-Title: "Diagnostic Pathology Request Task FBC"
+Instance:  TaskGroupFBCLFT
+InstanceOf: AUDiagnosticRequestTaskGroup
+Title: "Diagnostic Task Group FBC LFT"
 Usage:  #example
-* id = "5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
+* id = "28dc34e1-4999-4786-8238-9f8f8a5b78c2"
+* meta.tag = $diagnosticrequest-tasktag#fulfillment-task-group
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN
@@ -15,7 +16,6 @@ Usage:  #example
 * intent = #order
 * priority = #routine
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
-* focus = Reference(PathologyRequestFBC)
 * for = Reference(PatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)

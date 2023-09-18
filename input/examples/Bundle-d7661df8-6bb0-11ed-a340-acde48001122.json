@@ -69,6 +69,16 @@
                 "http://hl7.org.au/fhir/core/StructureDefinition/au-core-lastmenstrualperiod"
               ]
             },
+            "category" : [
+              {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code" : "survey"
+                  }
+                ]
+              }
+            ],
             "code": {
               "coding": [
                 {
@@ -95,16 +105,27 @@
                 "http://hl7.org.au/fhir/core/StructureDefinition/au-core-gestationalage"
               ]
             },
+            "category" : [
+              {
+                "coding" : [
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code" : "imaging",
+                    "display" : "Imaging"
+                  }
+                ]
+              }
+            ],
             "code": {
               "coding": [
                 {
                   "code": "57036006",
-                  "display": "Gestational Age",
+                  "display": "Fetal gestational age",
                   "system": "http://snomed.info/sct"
                 },
                 {
                   "code": "11885-1",
-                  "display": "Gestational Age by Last Menstrual Period (LMP)",
+                  "display": "Gestational age Estimated from last menstrual period",
                   "system": "http://loinc.org"
                 }
               ],
@@ -151,7 +172,7 @@
               "coding": [
                 {
                   "code": "VET",
-                  "display": "DVA",
+                  "display": "veteran health program",
                   "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
                 }
               ],
@@ -262,7 +283,7 @@
             "coding": [
               {
                 "code": "PGN",
-                "display": "Placer Group Identifier",
+                "display": "Placer Group Number",
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
               }
             ],
@@ -374,7 +395,7 @@
           "coding": [
             {
               "code": "patient-privacy",
-              "display": "Patient Privacy",
+              "display": "Privacy Consent",
               "system": "http://terminology.hl7.org/CodeSystem/consentscope"
             }
           ],
@@ -426,7 +447,7 @@
             "coding": [
               {
                 "code": "PGN",
-                "display": "Placer Group Identifier",
+                "display": "Placer Group Number",
                 "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
               }
             ],
@@ -702,7 +723,7 @@
               "coding": [
                 {
                   "code": "NOI",
-                  "display": "HPI-O",
+                  "display": "National Organisation Identifier",
                   "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203"
                 }
               ],

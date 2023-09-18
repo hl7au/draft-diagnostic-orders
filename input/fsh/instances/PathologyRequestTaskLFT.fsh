@@ -1,5 +1,5 @@
 Instance:  PathologyRequestTaskLFT
-InstanceOf: DiagnosticTaskRequest
+InstanceOf: AUDiagnosticRequestTaskRequest
 Title: "Diagnostic Pathology Request Task LFT"
 Usage:  #example
 * id = "1d4f3888-13b7-472d-859b-571bb7125fe2"
@@ -16,7 +16,7 @@ Usage:  #example
 * priority = #routine
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
 * focus = Reference(PathologyRequestLFT)
-* for = Reference(EOrdersPatientSmith)
+* for = Reference(PatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
   * identifier

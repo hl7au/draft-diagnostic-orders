@@ -1,8 +1,8 @@
-Instance:  PathologyRequestTaskFBC
-InstanceOf: AUDiagnosticRequestTaskRequest
-Title: "Diagnostic Pathology Request Task FBC"
+Instance:  TaskCommunicationRequestDoNotPerformSMS
+InstanceOf: AUDiagnosticRequestTaskCommunicationRequest
+Description: "Communication Request Task Do Not Perform SMS"
 Usage:  #example
-* id = "5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
+* id = "e8ed2aba-8127-47fa-b339-d9e134409f3f"
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN
@@ -13,11 +13,11 @@ Usage:  #example
   * assigner.display = "Small Family Trust"
 * status = #requested
 * intent = #order
-* priority = #routine
+* priority = #urgent
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
-* focus = Reference(PathologyRequestFBC)
+* focus = Reference(CommunicationRequestDoNotPerformSMS)
 * for = Reference(PatientSmith)
-* authoredOn = "2022-04-25"
+* authoredOn = "2022-04-25T16:50:11+10:00"
 * requester = Reference(PractitionerRolePlacer)
   * identifier
     * type = $v2-0203#DN

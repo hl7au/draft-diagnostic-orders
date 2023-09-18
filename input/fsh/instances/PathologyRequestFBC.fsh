@@ -1,5 +1,5 @@
 Instance:  PathologyRequestFBC
-InstanceOf: EOrdersDiagnosticRequest
+InstanceOf: AUDiagnosticRequestServiceRequest
 Title: "Diagnostic Pathology Request FBC"
 Usage:  #example
 * id = "681a8919-8d91-4868-a46a-ab6877ad27ea"
@@ -15,12 +15,12 @@ Usage:  #example
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #routine
-* code.coding = $sct#26604007 "Full blood count"
+* code.coding = $sct#26604007 "FBC - Full blood count"
 * code.text = "FBC"
-* subject = Reference(EOrdersPatientSmith)
+* subject = Reference(PatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
-* insurance = Reference(EOrders-Inline-1-Coverage)
-* contained[0] = EOrders-Inline-1-Coverage
-* encounter = Reference(EOrders-Inline-2-Encounter)
-* contained[+] = EOrders-Inline-2-Encounter
+* insurance = Reference(PathologyRequest-Inline-1-Coverage)
+* contained[0] = PathologyRequest-Inline-1-Coverage
+* encounter = Reference(PathologyRequest-Inline-2-Encounter)
+* contained[+] = PathologyRequest-Inline-2-Encounter

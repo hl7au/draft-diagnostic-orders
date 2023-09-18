@@ -19,9 +19,3 @@ Usage:  #example
   * system = #email
   * value = "doctors_services@snp.com.au"
   * use = #work
-/*
-* telecom[+]
-  * system = #email
-  * value = "patientservices@snp.com.au"
-  * use = #work
-*/

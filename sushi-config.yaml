@@ -2,13 +2,13 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.au.draft.diagnostic-orders
-canonical: http://draft.hl7.org.au/fhir/diagnostic-orders
-name: DiagnosticOrders
-title: Diagnostic Requests
+id: hl7.fhir.au.draft.diagnostic-request
+canonical: http://draft.hl7.org.au/fhir/diagnostic-request
+name: AUDiagnosticRequest
+title: AU Diagnostic Request Implementation Guide
 status: draft
 experimental: true
-version: 0.0.5
+version: 0.1.0
 license: CC0-1.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+

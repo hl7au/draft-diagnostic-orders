@@ -1,8 +1,8 @@
-Instance:  PathologyRequestTaskFBC
-InstanceOf: AUDiagnosticRequestTaskRequest
-Title: "Diagnostic Pathology Request Task FBC"
+Instance:  TaskCommunicationRequestUrgentPhone
+InstanceOf: AUDiagnosticRequestTaskCommunicationRequest
+Description: "Diagnostic Communication Request Task Urgent Phone Call"
 Usage:  #example
-* id = "5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
+* id = "509cefba-2250-449d-bfe7-ec2dd95d1e81"
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN
@@ -13,11 +13,11 @@ Usage:  #example
   * assigner.display = "Small Family Trust"
 * status = #requested
 * intent = #order
-* priority = #routine
+* priority = #urgent
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
-* focus = Reference(PathologyRequestFBC)
+* focus = Reference(CommunicationRequestUrgentPhone)
 * for = Reference(PatientSmith)
-* authoredOn = "2022-04-25"
+* authoredOn = "2022-04-25T16:50:11+10:00"
 * requester = Reference(PractitionerRolePlacer)
   * identifier
     * type = $v2-0203#DN

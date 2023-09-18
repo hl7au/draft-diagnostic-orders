@@ -17,3 +17,5 @@ Alias: $task-code = http://hl7.org/fhir/CodeSystem/task-code
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
 Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
+
+Alias: $diagnosticrequest-tasktag = http://terminology.hl7.org.au/CodeSystem/diagnosticrequest-tasktag

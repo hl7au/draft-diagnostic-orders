@@ -1,5 +1,5 @@
 Instance:  ConsentWithdrawlFBCLFT
-InstanceOf: EOrdersConsentWithdrawl
+InstanceOf: AUDiagnosticRequestConsentWithdrawl
 Title: "Diagnostic Consent withdraw uplod MHR FBC LFT"
 Description: "Diagnostic Consent to indicate do not upload to MHR"
 Usage:  #example
@@ -13,11 +13,11 @@ Usage:  #example
 // Canadian example uses Loinc 59284-0 (Consent Document)
 * category[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#IDSCL
 
-* patient = Reference(EOrdersPatientSmith)
+* patient = Reference(PatientSmith)
 * dateTime = "2022-04-25"
 
 // not in Canadian example
-* performer[+] = Reference(EOrdersPatientSmith)
+* performer[+] = Reference(PatientSmith)
 
 * organization[+] = Reference(OrganizationPlacer)
 
