@@ -24,7 +24,7 @@ This guide is divided into several pages which are listed at the top of each pag
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
-* [Genie Solutions](https://www.geniesolutionssoftware.com.au/)
+* [Magentus Practice Management](https://www.magentus.com/practice-management)
 * [Sonic Healthcare](http://https://www.sonichealthcare.com/)
 
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
