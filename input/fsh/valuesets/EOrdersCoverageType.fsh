@@ -1,4 +1,4 @@
-ValueSet: EOrdersCoverageType
+ValueSet: ERequestsCoverageType
 Id: eorders-coverage-type
 Title: "Diagnostic Coverage Type and Self Pay codes"
 * ^status = #active

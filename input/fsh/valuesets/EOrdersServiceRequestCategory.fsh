@@ -1,4 +1,4 @@
-ValueSet: EOrdersServiceRequestCategory
+ValueSet: ERequestsServiceRequestCategory
 Id: eorders-servicerequestcategory
 Title: "Diagnostic Service Request Category codes"
 * ^description = "Diagnostic Service Request Category codes"

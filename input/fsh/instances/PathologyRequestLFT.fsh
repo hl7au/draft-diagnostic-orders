@@ -1,5 +1,5 @@
 Instance:  PathologyRequestLFT
-InstanceOf: EOrdersDiagnosticRequest
+InstanceOf: ERequestsDiagnosticRequestPathology
 Title: "Diagnostic Pathology Request LFT"
 Usage:  #example
 * id = "3dff87af-5dac-40d5-be3d-9eaf9b3879b8"
@@ -17,10 +17,10 @@ Usage:  #example
 * priority = #routine
 * code.coding = $sct#26958001 "Liver function test"
 * code.text = "LFT"
-* subject = Reference(EOrdersPatientSmith)
+* subject = Reference(ERequestsPatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
-* insurance = Reference(EOrders-Inline-1-Coverage)
-* contained[0] = EOrders-Inline-1-Coverage
-* encounter = Reference(EOrders-Inline-2-Encounter)
-* contained[+] = EOrders-Inline-2-Encounter
+* insurance = Reference(ERequests-Inline-1-Coverage)
+* contained[0] = ERequests-Inline-1-Coverage
+* encounter = Reference(ERequests-Inline-2-Encounter)
+* contained[+] = ERequests-Inline-2-Encounter

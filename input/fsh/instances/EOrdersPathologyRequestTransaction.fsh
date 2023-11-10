@@ -1,4 +1,4 @@
-Instance: EOrdersPathologyRequestTransaction
+Instance: ERequestsPathologyRequestTransaction
 InstanceOf: Bundle
 Title: "Diagnostic Pathology Request Transaction"
 Description: "Diagnostic Pathology Request Transaction - no Task"
@@ -8,7 +8,7 @@ Usage: #example
 * type = #transaction
 * entry
   * fullUrl = "urn:uuid:8dbe2623-c7f4-469e-a10a-a2073a62dd13"
-  * resource = EOrdersPathologyRequest
+  * resource = ERequestsPathologyRequest
   * request.method = #PUT
   * request.url = "ServiceRequest/8dbe2623-c7f4-469e-a10a-a2073a62dd13"
 

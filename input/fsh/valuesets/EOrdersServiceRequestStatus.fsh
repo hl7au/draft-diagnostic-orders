@@ -1,4 +1,4 @@
-ValueSet: EOrdersServiceRequestStatus
+ValueSet: ERequestsServiceRequestStatus
 Id: eorders-servicerequeststatus
 Title: "Diagnostic Service Request Status codes"
 * ^description = "Diagnostic Service Request Status codes"

@@ -1,4 +1,4 @@
-Instance: EOrdersResultCopiesTo-DrFields
+Instance: ERequestsResultCopiesTo-DrFields
 InstanceOf: ResultCopiesTo
 Usage: #inline
 * url = Canonical(ResultCopiesTo)

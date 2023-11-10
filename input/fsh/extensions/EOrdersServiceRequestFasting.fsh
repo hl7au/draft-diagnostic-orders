@@ -1,4 +1,4 @@
-Profile: EOrdersServiceRequestFasting
+Profile: ERequestsServiceRequestFasting
 Parent: http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
 Id: eorders-servicerequest-fasting
 Title: "Diagnostic Request Fasting Precondition extension"
