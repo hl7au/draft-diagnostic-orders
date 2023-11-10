@@ -6,7 +6,7 @@ In a directed order, the `Task.owner` is assigned to the selected provider at th
 
 ### Undirected Order
 
-In an undirectoed order, no `Task.owner` is assigned at the time of order creation.  Instead, the Task is assigned to the provider scanning the barcode.
+In an undirected order, no `Task.owner` is assigned at the time of order creation.  Instead, the Task is assigned to the provider scanning the barcode.
 
 {% include img.html img="Flow-undirected.png" caption="Workflow of an Undirected Diagnostic Order" %}
 
