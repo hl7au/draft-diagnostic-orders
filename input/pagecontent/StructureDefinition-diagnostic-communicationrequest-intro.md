@@ -1,0 +1,3 @@
+This is used when the requesting clinician requires urgent contact relating to the results of a request. The request should be marked as ‘urgent’ to match the ‘urgent’ communication request.  Criteria for communicating from the service provider to the requesting clinician are not specified so this assumes all results will be communicated.
+
+A communication fulfilment task is associated with each practitioner communication request.  
