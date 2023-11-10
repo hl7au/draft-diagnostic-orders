@@ -78,12 +78,11 @@
 				<title value="Profiles and Extensions"/>
 				<generation value="markdown"/>
 			</page>
-			<!--
 			<page>
 				<nameUrl value="search-parameters-and-operations.html"/>
 				<title value="Search Parameters and Operations"/>
 				<generation value="markdown"/>
-			</page>-->
+			</page>
 			<!--<page>
 				<nameUrl value="terminology.html"/>
 				<title value="Terminology"/>
