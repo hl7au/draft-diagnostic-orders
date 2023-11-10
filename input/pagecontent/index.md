@@ -1,7 +1,7 @@
 ### Introduction
-This implementation guide is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> in an Australian context for TBD.
+This implementation guide supports Diagnostic Requests using HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> in an Australian context.
 
-Insert purpose and scope of MyDraftIG here.
+Initial work has focussed on community Pathology Requests but there has been an attempt to provide foundations compatible with Radiology request needs.  Further input is needed to identify features needed for Hospital requesting.
 
 #### Relationship between HL7 AU and this implementation guide
 * This implementation guide is published as a proof of concept implementation guide known to HL7 Australia.
@@ -14,8 +14,10 @@ This guide is divided into several pages which are listed at the top of each pag
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Guidance](guidance.html): This page provides guidance on using the profiles defined in this guide.
+- [Workflow](workflow.html): Ordering workflows for the common diagnostic request approaches.
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This set of pages describes the profiles and extensions that are defined in this guide to represent Australian local concepts using FHIR. Each profile page includes a narrative description, guidance, and formal definition. Although the guidance typically focuses on the profiled elements and seeks to provide a ‘how-to’ guide when representing concepts, it may also may focus on un-profiled elements to aid with implementation.
+  - [Search Parameters and Operations](search-parameters-and-operations.html): Additional search parameters and operations needed by IG.
   - [Terminology](terminology.html): This set of pages lists the value sets and code systems defined in this guide.
 - [Examples](examples.html): This page lists all the examples used in this guide.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the AU Base FHIR NPM package.

@@ -1,4 +1,4 @@
-Profile: EOrdersPractitionerRole
+Profile: ERequestsPractitionerRole
 Parent: AUCorePractitionerRole
 Id: eorders-practitionerrole
 Title: "Diagnostic PractitionerRole"
@@ -10,6 +10,6 @@ Description: "Diagnostic PractitionerRole profile"
 * identifier ^slicing.discriminator.path = "type"
 * identifier contains 
     doctorNumber 0..1 MS
-* identifier[doctorNumber] only EOrdersDoctorNumber
+* identifier[doctorNumber] only ERequestsDoctorNumber
   * ^short = "Laboratory assigned doctor number"
 * location 1..

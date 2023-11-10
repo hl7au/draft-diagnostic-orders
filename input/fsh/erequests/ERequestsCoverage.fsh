@@ -1,8 +1,8 @@
-Profile: EOrdersCoverage
+Profile: ERequestsCoverage
 Parent: Coverage
 Id: eorders-coverage
 Title: "Diagnostic Coverage"
-Description: "Diagnostic Coverage"
+Description: "Coverage carries the funding option for the request including self-funded, DVA, private insurance, or bulk billed."
 
 * id 0..1 MS
 * id ^short = "Unique resource identifier or contained resource access number, e.g. 1"
@@ -21,11 +21,11 @@ Description: "Diagnostic Coverage"
 //  * assigner.display MS
 
 * status MS
-* status from EOrdersCoverageStatus
+* status from ERequestsCoverageStatus
 * status ^short = "active | cancelled"  
 
 * type 1.. MS 
-* type from EOrdersCoverageType
+* type from ERequestsCoverageType
 * type ^short = "Coverage Type and Self Payment code"
   * text 1..1 
   * text ^short = "Self Funded | Bulk Billed | DVA"

@@ -2,7 +2,7 @@ Profile: DiagnosticTaskBase
 Parent: Task
 Id: diagnostic-task-base
 Title: "Diagnostic Task Base"
-Description: "Diagnostic Task Base"
+Description: "Diagnostic Task Base is a shared foundation for both ServiceRequest and CommunicationRequest tasks."
 * . ^short = "Diagnostic Task Base"
 * ^abstract = true
 * meta
@@ -16,19 +16,19 @@ Description: "Diagnostic Task Base"
   * tag[diagnostic-task] from DiagnosticTaskTags (required)
     * ^short = "diagnostic-task-request | diagnostic-task-group"
 * groupIdentifier 1..1 MS
-* groupIdentifier ^type.profile = Canonical(EOrdersPlacerGroupNumber)
+* groupIdentifier ^type.profile = Canonical(ERequestsPlacerGroupNumber)
 * status MS
-* status from EOrdersTaskStatus
+* status from ERequestsTaskStatus
   * ^short = "requested | received | accepted | rejected | cancelled | in-progress | completed | failed"
 * statusReason MS
 * statusReason ^short = "Must support when status is rejected, cancelled or failed"
 * intent = #order (exactly)
   * ^short = "order"
 * priority MS 
-* priority from EOrdersPriority
+* priority from ERequestsPriority
   * ^short = "routine | urgent"
 * code 1..1 MS
-* code from EOrdersTaskCode (required)
+* code from ERequestsTaskCode (required)
   * ^short = "fulfill | abort"
 * for 1..1 MS
 * for only Reference(AUCorePatient)
@@ -39,8 +39,8 @@ Description: "Diagnostic Task Base"
 * lastModified ^short = "Date/time when task and/or status last updated"
 * requester 1..1 MS
   * ^short = "The provider requesting the diagnostic service"
-* requester only Reference(EOrdersPractitionerRole)
-  * identifier only EOrdersDoctorNumber
+* requester only Reference(ERequestsPractitionerRole)
+  * identifier only ERequestsDoctorNumber
     * ^short = "Laboratory's doctor number for the requester"
 * owner 1..1 MS
 * owner only Reference(AUCoreOrganization or AUCoreHealthcareService)

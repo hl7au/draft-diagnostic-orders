@@ -1,4 +1,4 @@
-ValueSet: EOrdersTaskStatus
+ValueSet: ERequestsTaskStatus
 Id: eorders-taskstatus
 Title: "Diagnostic Task Status codes"
 * ^description = "Diagnostic Task Status codes"

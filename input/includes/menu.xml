@@ -10,6 +10,9 @@
   <li> 
     <a href="guidance.html">Guidance</a>
   </li>
+  <li>
+    <a href="workflow.html">Workflow</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
       <b class="caret"></b>
@@ -18,11 +21,9 @@
       <li>
         <a href="profiles-and-extensions.html">Profiles and Extensions</a>
       </li>
-		<!--
       <li>
         <a href="search-parameters-and-operations.html">Search Parameters and Operations</a>
       </li>
-	  -->
       <li>
         <a href="terminology.html">Terminology</a>
       </li>

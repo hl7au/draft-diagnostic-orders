@@ -2,7 +2,7 @@ Profile: DiagnosticCommunicationRequestPatient
 Parent: CommunicationRequest
 Id: diagnostic-communicationrequest-patient
 Title: "Diagnostic Communication Request Patient"
-Description: "Diagnostic provider to patient communication request"
+Description: "Diagnostic provider to patient communication request for coordinating service provision"
 * . ^short = "Diagnostic communication request to patient"
 * status MS
 * status = #active (exactly)
@@ -30,4 +30,4 @@ Description: "Diagnostic provider to patient communication request"
 * category from DiagnosticCommunicationCategory
   * ^short = "reminder | instruction"
 * groupIdentifier 1..1 MS
-* groupIdentifier ^type.profile = Canonical(EOrdersPlacerGroupNumber)
+* groupIdentifier ^type.profile = Canonical(ERequestsPlacerGroupNumber)

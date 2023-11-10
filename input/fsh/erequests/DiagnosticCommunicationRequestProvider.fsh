@@ -9,7 +9,7 @@ Description: "Diagnostic communication request to clinical provider.  This is us
   * ^short = "active"
 * priority MS
 * about 1.. MS
-* about only Reference (EOrdersDiagnosticRequest)
+* about only Reference (ERequestsDiagnosticRequestPathology or ERequestsDiagnosticRequestRadiology)
   * ^short = "Diagnostic request the urgent communication is about"
 * authoredOn 1..1 MS
 * authoredOn ^short = "Date/time when communication request direction obtained"
@@ -34,7 +34,7 @@ Description: "Diagnostic communication request to clinical provider.  This is us
 * category = $communication-category#alert
   * ^short = "alert"
 * groupIdentifier 1..1 MS
-* groupIdentifier ^type.profile = Canonical(EOrdersPlacerGroupNumber)
+* groupIdentifier ^type.profile = Canonical(ERequestsPlacerGroupNumber)
 
 * contained ^slicing.rules = #open
 * contained ^slicing.discriminator.type = #type

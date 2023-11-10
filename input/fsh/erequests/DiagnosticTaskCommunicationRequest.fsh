@@ -2,7 +2,7 @@ Profile: DiagnosticTaskCommunicationRequest
 Parent: DiagnosticTaskBase
 Id: diagnostic-task-communicationrequest
 Title: "Diagnostic Communication Request Task"
-Description: "Diagnostic Communication Request Task"
+Description: "Diagnostic Communication Request Task to support a Patient or Practitioner CommunicationRequest."
 * . ^short = "Diagnostic Communication Request Task"
 * meta.tag[diagnostic-task] = DiagnosticTaskTag#diagnostic-task-request
   * ^short = "diagnostic-task-request"

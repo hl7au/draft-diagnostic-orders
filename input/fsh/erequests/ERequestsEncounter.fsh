@@ -1,8 +1,8 @@
-Profile: EOrdersEncounter
+Profile: ERequestsEncounter
 Parent: AUBaseEncounter
 Id: eorders-encounter
 Title: "Diagnostic Encounter"
-Description: "Minimum Encounter for Diagnostic Request"
+Description: "Minimum Encounter for a Diagnostic Request.  Its main purpose at present is to carry the AMB code to designate that we are restricting requests to community-based rather than hospital-based."
 
 * id MS
 * status MS

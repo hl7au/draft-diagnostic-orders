@@ -21,7 +21,7 @@ Usage:  #example
 * medium[+]
   * coding = $v3-ParticipationMode#PHONE
 * recipient[+] = Reference(DiagnosticPractitionerRolePhoneContact)
-* subject[+] = Reference(EOrdersPatientSmith)
+* subject[+] = Reference(ERequestsPatientSmith)
   * display = "Mr John Smith"
 * requester = Reference(PractitionerRolePlacer)
   * display = "Dr Jane Doe"

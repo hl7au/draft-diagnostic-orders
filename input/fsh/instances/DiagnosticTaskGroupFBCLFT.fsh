@@ -16,7 +16,7 @@ Usage:  #example
 * intent = #order
 * priority = #routine
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
-* for = Reference(EOrdersPatientSmith)
+* for = Reference(ERequestsPatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
   * identifier

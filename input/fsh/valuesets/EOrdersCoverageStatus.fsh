@@ -1,4 +1,4 @@
-ValueSet: EOrdersCoverageStatus
+ValueSet: ERequestsCoverageStatus
 Id: eorders-coverage-status
 Title: "Diagnostic Coverage Status codes"
 * ^status = #active

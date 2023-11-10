@@ -16,7 +16,7 @@ Usage:  #example
 * priority = #routine
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
 * focus = Reference(PathologyServiceRequest)
-* for = Reference(EOrdersPatientSmith)
+* for = Reference(ERequestsPatientSmith)
 * authoredOn = "2022-04-19"
 * requester = Reference(PractitionerRolePlacer)
   * identifier

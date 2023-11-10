@@ -1,4 +1,4 @@
-Profile: EOrdersPlacerGroupNumber
+Profile: ERequestsPlacerGroupNumber
 Parent: AULocalOrderIdentifier
 Id: eorders-placergroupnumber
 Title: "Diagnostic Placer Group Number"

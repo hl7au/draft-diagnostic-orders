@@ -1,5 +1,5 @@
 Instance:  PractitionerRolePlacer
-InstanceOf: EOrdersPractitionerRole
+InstanceOf: ERequestsPractitionerRole
 Title: "Diagnostic Requester PractitionerRole"
 Usage:  #example
 * id = "570c1233-5361-453e-99a4-504c2045d27c"

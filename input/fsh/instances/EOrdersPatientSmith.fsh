@@ -1,4 +1,4 @@
-Instance:  EOrdersPatientSmith
+Instance:  ERequestsPatientSmith
 InstanceOf: AUCorePatient
 Title: "Diagnostic Patient"
 Description: "Diagnostic Patient - minimal with MCN"

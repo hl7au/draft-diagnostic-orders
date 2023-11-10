@@ -84,7 +84,7 @@ Usage:  #example
 // Referenced resources
 * entry[+]
   * fullUrl = "urn:uuid:1078d551-7be2-49f7-a122-c230b8757f2f"
-  * resource = EOrdersPatientSmith
+  * resource = ERequestsPatientSmith
   * request
     * method = #PUT
     * url = "Patient/1078d551-7be2-49f7-a122-c230b8757f2f"

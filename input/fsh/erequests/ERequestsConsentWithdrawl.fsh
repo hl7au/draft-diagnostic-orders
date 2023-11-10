@@ -1,8 +1,8 @@
-Profile: EOrdersConsentWithdrawl
+Profile: ERequestsConsentWithdrawl
 Parent: http://hl7.org/fhir/StructureDefinition/Consent
 Id: eorders-consentwithdrawl
 Title: "Diagnostic Consent Withdrawl"
-Description: "Diagnostic Withdraw Consent to upload result to MHR"
+Description: "Withdraw consent to upload result to MHR. "
 * status MS
 * status = #active
 * scope MS
@@ -29,14 +29,7 @@ Description: "Diagnostic Withdraw Consent to upload result to MHR"
     * meaning MS
     * meaning = #dependents
     * reference MS
-    // HF: problem is that the Sonic DiagnosticReport does not reference the ServiceRequest 
-    //     as they can not reliably link the results to the request
-    * reference only Reference(EOrdersDiagnosticRequest)
-    * reference ^short = "Reference to dependent ServiceRequest(s). (See description for unresolved problem)"
+    * reference only Reference(ERequestsDiagnosticRequestPathology or ERequestsDiagnosticRequestRadiology)
+    * reference ^short = "Reference to dependent ServiceRequest(s)."
     * reference ^definition = """
-    Reference to the ServiceRequest(s) related to the DiagnosticReport to be not disclosed.
-
-    **Problem: The Sonic DiagnosticReport will not reference the ServiceRequest as they can not reliably link the results to the request.**
-
-    Will need to consider how to link this consent to the DIagnosticReport, perhaps a conditional reference or logical reference using the Placer Group Number (PGN)??
-    """
+    Reference to the ServiceRequest(s) related to the DiagnosticReport to not be disclosed."""

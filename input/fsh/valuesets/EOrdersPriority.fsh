@@ -1,4 +1,4 @@
-ValueSet: EOrdersPriority
+ValueSet: ERequestsPriority
 Id: eorders-priority
 Title: "Diagnostic Priority codes"
 * ^description = "Diagnostic Priority codes"

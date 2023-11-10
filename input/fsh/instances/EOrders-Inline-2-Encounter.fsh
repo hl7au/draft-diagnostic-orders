@@ -1,5 +1,5 @@
-Instance:  EOrders-Inline-2-Encounter
-InstanceOf: EOrdersEncounter
+Instance:  ERequests-Inline-2-Encounter
+InstanceOf: ERequestsEncounter
 Usage:  #inline
 * id = "2"
 * status = #finished

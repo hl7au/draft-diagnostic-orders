@@ -20,7 +20,7 @@ Usage:  #example
 * doNotPerform = true
 * medium[+]
   * coding = $v3-ParticipationMode#SMSWRIT
-* recipient[+] = Reference(EOrdersPatientSmith)
+* recipient[+] = Reference(ERequestsPatientSmith)
   * display = "Mr John Smith"
 * requester = Reference(PractitionerRolePlacer)
   * display = "Dr Jane Doe"
@@ -46,7 +46,7 @@ Usage:  #example
 * priority = #urgent
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
 * focus = Reference(DiagnosticCommunicationRequestDoNotPerformSMS)
-* for = Reference(EOrdersPatientSmith)
+* for = Reference(ERequestsPatientSmith)
 * authoredOn = "2022-04-25T16:50:11+10:00"
 * requester = Reference(PractitionerRolePlacer)
   * identifier
