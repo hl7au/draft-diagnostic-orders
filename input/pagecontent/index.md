@@ -29,6 +29,10 @@ This guide is the product of collaborative work undertaken with participants fro
 * [Magentus Practice Management](https://www.magentus.com/practice-management)
 * [Sonic Healthcare](http://https://www.sonichealthcare.com/)
 
+Any other interested parties are welcome to collaborate and contribute.
+
+The end goal is for this work to feed into the [Requesting Accelerator](https://confluence.csiro.au/display/FHIR/AU+Core+and+AU+eRequesting+FHIR+Accelerator) and in the meantime, this IG will be worked on through the [HL7 AU Connectathon](https://confluence.hl7.org/display/HA/HL7+Australia+Connectathons) process.
+
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
 implementation. This implementation guide will be used as the basis for Australian connectathon events.
 

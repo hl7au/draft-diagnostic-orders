@@ -2,7 +2,7 @@ Profile: ERequestsDiagnosticRequestBase
 Parent: http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest
 Id: eorders-diagnosticrequest-base
 Title: "Diagnostic Service Request Base"
-Description: "Diagnositic Service Request Base used for Pathology and Radiology"
+Description: "Diagnositic Service request base used for Pathology and Radiology.  Carries all the common attributes for diagnostic requests.  Only put attributes here if not specific to pathology or radiology."
 * . ^short = "Diagnostic Service Request Base"
 * ^abstract = true
 

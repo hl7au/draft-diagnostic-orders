@@ -1,12 +1,20 @@
 ### Introduction
 
-The IG is focussed on the use of ServiceRequest and Task resources to support the process of diagnostic request and request fulfilment.  While they are all linked through a common group identifier, each of these resources also shares reference to a common group identifier in `requisition` and `groupIdentifier`.
+The IG is focussed on the use of `ServiceRequest` and `Task` resources to support the process of diagnostic request and request fulfilment.  While they are all linked through a common group `Task`, each of these resources also share reference to a group identifier in `requisition` and `groupIdentifier`.
 
-{% include img.html img="eRequestServReqTask.png" caption="ServiceRequests and their linked Tasks" %}
+{% include img.html img="eRequestServReqTask.png" %}
 
-The following profiles and have been defined for this implementation guide.  Contained resources are indicated by a dashed outline.
+`ServiceRequest`s represent the request of a single test or procedure.  In Australia, various policy, regulatory, and funding approaches means that we treat a request group as the first-class foundation of an order or request.  A `Task` group should be the focus of request discovery.  For example,
 
-{% include img.html img="eRequestResources.png" caption="Profiles used for Requesting" %}
+~~~
+GET /Task?status=requested,cancelled&_tag=diagnostic-task-group&_revinclude=Task:part-of&_include:iterate=Task:focus&_include=Task:owner&       
+        _include:iterate=ServiceRequest:subject&_include:iterate=ServiceRequest:requester&_include:iterate=PractitionerRole:practitioner&
+        _include:iterate=PractitionerRole:organization&_include:iterate=ServiceRequest:copiesTo&_revinclude:iterate=Consent:data
+~~~
+
+The group `Task` is identified via the `Task._tag` value.  From the group `Task`, the  request `Task`s are picked up along with their `ServiceRequest`s.
+
+The placer must manage the integrity of the `Task` set.  That is, the data in the group `Task`  should reflect that within the request `Task`s.  The group `Task` carries information about the whole order so an appropriate summary `Task.status` should be provided by the filler system.  Some placer systems will only reflect the group `Task` fulfilment data rather than that provided by the individual request `Task`s. 
 
 ### Profiles
 
@@ -32,3 +40,9 @@ The following [extensions]({{site.data.fhir.path}}extensibility.html) have been 
 <br />
 
 <!-- {% include link-list.md %} -->
+
+### Profile Map
+
+The following profiles have been defined for this implementation guide.  Contained resources are indicated by a dashed outline.
+
+{% include img.html img="eRequestResources.png" caption="Profiles used for Requesting" %}

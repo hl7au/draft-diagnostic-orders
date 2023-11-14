@@ -2,7 +2,7 @@ Profile: DiagnosticPractitionerRoleContact
 Parent: AUBasePractitionerRole
 Id: diagnostic-practitionerrole-contact
 Title: "Diagnostic PractitionerRole Contact"
-Description: "This profile supports a PractitionerRole with communication contact details in the context of Diagnostic Requests"
+Description: "This profile supports a PractitionerRole for clinician communication contact details as used for urgent diagnostic result communication."
 
 * . ^short = "Individual provider with communication contact details"
 * practitioner 1.. MS

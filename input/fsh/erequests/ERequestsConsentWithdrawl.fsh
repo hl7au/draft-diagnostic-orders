@@ -2,7 +2,7 @@ Profile: ERequestsConsentWithdrawl
 Parent: http://hl7.org/fhir/StructureDefinition/Consent
 Id: eorders-consentwithdrawl
 Title: "Diagnostic Consent Withdrawl"
-Description: "Withdraw consent to upload result to MHR. "
+Description: "Withdraw consent to upload report to MHR. This references the set of diagnostic ServiceRequests."
 * status MS
 * status = #active
 * scope MS

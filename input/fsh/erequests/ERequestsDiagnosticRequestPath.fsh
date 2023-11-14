@@ -2,7 +2,7 @@ Profile: ERequestsDiagnosticRequestPathology
 Parent: ERequestsDiagnosticRequestBase
 Id: eorders-diagnosticrequest-pathology
 Title: "Diagnostic Service Request Pathology"
-Description: "Diagnositic Service Request for Pathology"
+Description: "Diagnositic Service request for pathology."
 
 * extension contains ERequestsServiceRequestRule3Exemption named request-rule3exemption 0..1 MS
 

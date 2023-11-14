@@ -2,7 +2,7 @@ Profile: ERequestsPlacerGroupNumber
 Parent: AULocalOrderIdentifier
 Id: eorders-placergroupnumber
 Title: "Diagnostic Placer Group Number"
-Description: "Diagnostic Placer Group Number"
+Description: "Diagnostic placer group number used to link a set of requests into a single diagnostics order.  This will be used as the barcode or token to discover requests."
 * . ^short = "Diagnostic Placer Group Number"
 * type ^short = "Coded identifier type for placer group number"
   * coding 1..1    
