@@ -15,7 +15,7 @@ Usage:  #example
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #routine
-* code.coding = $sct#26604007 "Full blood count"
+* code.coding = $sct#26604007 "FBC - Full blood count"
 * code.text = "FBC"
 * subject = Reference(ERequestsPatientSmith)
 * authoredOn = "2022-04-25"

@@ -3,6 +3,7 @@ InstanceOf: DiagnosticTaskRequest
 Title: "Diagnostic Pathology Request Task LFT"
 Usage:  #example
 * id = "1d4f3888-13b7-472d-859b-571bb7125fe2"
+* meta.tag = DiagnosticTaskTag#diagnostic-task-request
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN

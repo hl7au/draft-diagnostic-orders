@@ -1,0 +1,884 @@
+{
+    "id": "49e7c746-7f92-11ee-a339-d2cbed391bce",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:141eded8-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "141eded8-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org.au/fhir/StructureDefinition/au-organization"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "active": true,
+                "address": [
+                    {
+                        "city": "East Melissa",
+                        "country": "AU",
+                        "line": [
+                            "Flat 52 9 Gary Top"
+                        ],
+                        "postalCode": "2970",
+                        "state": "TAS",
+                        "text": "Flat 52 9 Gary Top\nEast Melissa, TAS, 2970",
+                        "type": "physical",
+                        "use": "work"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NOI",
+                                    "display": "National Organisation Identifier",
+                                    "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "HPI-O"
+                        },
+                        "value": "8003624523203666"
+                    }
+                ],
+                "name": "East Melissa Medical Centre",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "0745508235"
+                    },
+                    {
+                        "system": "fax",
+                        "use": "work",
+                        "value": "6141878236"
+                    },
+                    {
+                        "system": "email",
+                        "use": "work",
+                        "value": "kyu@example.net"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:141e7ce0-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Practitioner/141e7ce0-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "141e7ce0-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "active": true,
+                "identifier": [
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/hi/hpii/1.0",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NPI",
+                                    "display": "National provider identifier",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "HPI-I"
+                        },
+                        "value": "8003613507257087"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Parker",
+                        "given": [
+                            "Anna"
+                        ],
+                        "prefix": [
+                            "Dr"
+                        ],
+                        "text": "Anna Parker",
+                        "use": "official"
+                    }
+                ],
+                "resourceType": "Practitioner"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:141eed88-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "141eed88-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-practitionerrole",
+                        "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "active": true,
+                "identifier": [
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/medicare-provider-number",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "UPIN",
+                                    "display": "Medicare Provider Number",
+                                    "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "Medicare Provider Number"
+                        },
+                        "value": "008946BB"
+                    },
+                    {
+                        "assigner": {
+                            "display": "Betoota Pathology"
+                        },
+                        "system": "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003629538686011",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "DN",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "value": "BE5362"
+                    }
+                ],
+                "location": [
+                    {
+                        "display": "East Melissa Medical Centre"
+                    }
+                ],
+                "organization": {
+                    "display": "East Melissa Medical Centre",
+                    "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                },
+                "practitioner": {
+                    "display": "Anna Parker",
+                    "reference": "Practitioner/141e7ce0-7f92-11ee-a339-d2cbed391bce"
+                },
+                "resourceType": "PractitionerRole"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:141f4530-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "141f4530-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "active": true,
+                "address": [
+                    {
+                        "city": "Jeffreyton",
+                        "country": "AU",
+                        "line": [
+                            "Apt. 418 53 Shaw Ridge"
+                        ],
+                        "postalCode": "2748",
+                        "state": "TAS",
+                        "text": "Apt. 418 53 Shaw Ridge\nJeffreyton, TAS, 2748",
+                        "type": "physical",
+                        "use": "home"
+                    }
+                ],
+                "birthDate": "1972-03-21",
+                "deceasedBoolean": false,
+                "gender": "male",
+                "generalPractitioner": [
+                    {
+                        "display": "PractitionerRole",
+                        "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "period": {
+                            "end": "2025-06"
+                        },
+                        "system": "http://ns.electronichealth.net.au/id/medicare-number",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "MC",
+                                    "display": "Patient's Medicare Number",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "Patient's Medicare Number"
+                        },
+                        "value": "21229942960"
+                    },
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/hi/ihi/1.0",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NI",
+                                    "display": "National unique individual identifier",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "National unique individual identifier"
+                        },
+                        "value": "8003602226306127"
+                    }
+                ],
+                "managingOrganization": {
+                    "display": "East Melissa Medical Centre",
+                    "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                },
+                "name": [
+                    {
+                        "family": "Brown",
+                        "given": [
+                            "Richard"
+                        ],
+                        "prefix": [
+                            "Mr."
+                        ],
+                        "text": "Richard Brown",
+                        "use": "official"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "mobile",
+                        "value": "0359547007"
+                    },
+                    {
+                        "system": "email",
+                        "use": "home",
+                        "value": "richard94@example.com"
+                    }
+                ],
+                "resourceType": "Patient"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:15747546-7f87-11ee-8580-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Organization/15747546-7f87-11ee-8580-d2cbed391bce"
+            },
+            "resource": {
+                "id": "15747546-7f87-11ee-8580-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org.au/fhir/StructureDefinition/au-organization"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "active": true,
+                "address": [
+                    {
+                        "city": "Betoota",
+                        "country": "AU",
+                        "line": [
+                            "199 Haddon Street"
+                        ],
+                        "postalCode": "4482",
+                        "state": "QLD",
+                        "type": "physical",
+                        "use": "work"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/hi/hpio/1.0",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "NOI",
+                                    "display": "National Organisation Identifier",
+                                    "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "HPI-O"
+                        },
+                        "value": "8003629538686011"
+                    }
+                ],
+                "name": "Betoota Pathology",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "use": "work",
+                        "value": "info@betootapath.com.au"
+                    },
+                    {
+                        "system": "fax",
+                        "use": "work",
+                        "value": "+61755512346"
+                    }
+                ],
+                "resourceType": "Organization"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:49e91484-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "ServiceRequest/49e91484-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "49e91484-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-diagnosticrequest-pathology",
+                        "http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                },
+                "contained": [
+                    {
+                        "id": "billingCoverage",
+                        "meta": {
+                            "profile": [
+                                "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-coverage,"
+                            ],
+                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                        },
+                        "beneficiary": {
+                            "display": "Richard Brown",
+                            "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                        },
+                        "payor": [
+                            {
+                                "display": "Medicare Australia",
+                                "type": "Organization"
+                            }
+                        ],
+                        "status": "active",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "PUBLICPOL",
+                                    "display": "public healthcare",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "version": "2018-08-12"
+                                }
+                            ],
+                            "text": "Bulk Billed"
+                        },
+                        "resourceType": "Coverage"
+                    },
+                    {
+                        "id": "patientEncounter",
+                        "meta": {
+                            "profile": [
+                                "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-encounter",
+                                "http://hl7.org.au/fhir/StructureDefinition/au-encounter"
+                            ],
+                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                        },
+                        "class": {
+                            "code": "AMB",
+                            "display": "ambulatory",
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+                        },
+                        "status": "finished",
+                        "resourceType": "Encounter"
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/servicerequest-precondition",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "726054005",
+                                    "display": "After fasting",
+                                    "system": "http://snomed.info/sct"
+                                }
+                            ],
+                            "text": "Fasting"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.org.au/fhir/StructureDefinition/result-copies-to",
+                        "valueReference": {
+                            "display": "Anna Parker",
+                            "identifier": {
+                                "system": "http://ns.electronichealth.net.au/id/medicare-provider-number",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "code": "UPIN",
+                                            "display": "Medicare Provider Number",
+                                            "system": "http://terminology.hl7.org.au/CodeSystem/v2-0203"
+                                        }
+                                    ],
+                                    "text": "Medicare Provider Number"
+                                },
+                                "value": "008946BB"
+                            },
+                            "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                        }
+                    }
+                ],
+                "authoredOn": "2023-11-10T16:27:57.000001+10:00",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "108252007",
+                                "display": "Laboratory procedure",
+                                "system": "http://snomed.info/sct"
+                            }
+                        ],
+                        "text": "Laboratory procedure"
+                    }
+                ],
+                "code": {
+                    "text": "Measles serology"
+                },
+                "encounter": {
+                    "display": "Encounter",
+                    "reference": "#patientEncounter",
+                    "type": "Encounter"
+                },
+                "identifier": [
+                    {
+                        "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "PLAC",
+                                    "display": "Placer Identifier",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ],
+                            "text": "Placer Number"
+                        },
+                        "value": "PON-Genie-20231110162757-0654"
+                    }
+                ],
+                "insurance": [
+                    {
+                        "display": "Coverage",
+                        "reference": "#billingCoverage",
+                        "type": "Coverage"
+                    }
+                ],
+                "intent": "order",
+                "occurrencePeriod": {
+                    "end": "2024-11-08",
+                    "start": "2023-11-10"
+                },
+                "patientInstruction": "Some patient instructions",
+                "priority": "routine",
+                "quantityQuantity": {
+                    "value": 1
+                },
+                "reasonCode": [
+                    {
+                        "text": "A clinical note"
+                    }
+                ],
+                "requester": {
+                    "display": "PractitionerRole",
+                    "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                },
+                "requisition": {
+                    "assigner": {
+                        "display": "East Melissa Medical Centre",
+                        "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                    },
+                    "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "PGN",
+                                "display": "Placer Group Number",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                            }
+                        ],
+                        "text": "Placer Group Number"
+                    },
+                    "value": "GTU72860-A0426"
+                },
+                "status": "active",
+                "subject": {
+                    "display": "Richard Brown",
+                    "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                },
+                "resourceType": "ServiceRequest"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:49e94f58-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Task/49e94f58-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "49e94f58-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-request"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6",
+                    "tag": [
+                        {
+                            "code": "diagnostic-task-request",
+                            "display": "diagnostic task request",
+                            "system": "http://draft.hl7.org.au/fhir/diagnostic-orders/CodeSystem/diagnostic-task-tag"
+                        }
+                    ]
+                },
+                "authoredOn": "2023-11-10T16:27:57.000002+10:00",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "fulfill",
+                            "display": "Fulfill the focal request",
+                            "system": "http://hl7.org/fhir/CodeSystem/task-code"
+                        }
+                    ],
+                    "text": "Fulfill"
+                },
+                "description": "Fulfillment workflow for the referenced ServiceRequest",
+                "focus": {
+                    "display": "ServiceRequest",
+                    "reference": "ServiceRequest/49e91484-7f92-11ee-a339-d2cbed391bce"
+                },
+                "for": {
+                    "display": "Richard Brown",
+                    "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                },
+                "groupIdentifier": {
+                    "assigner": {
+                        "display": "East Melissa Medical Centre",
+                        "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                    },
+                    "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "PGN",
+                                "display": "Placer Group Number",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                            }
+                        ],
+                        "text": "Placer Group Number"
+                    },
+                    "value": "GTU72860-A0426"
+                },
+                "intent": "order",
+                "owner": {
+                    "display": "Betoota Pathology",
+                    "reference": "Organization/15747546-7f87-11ee-8580-d2cbed391bce"
+                },
+                "partOf": [
+                    {
+                        "display": "Task",
+                        "reference": "Task/49e7c746-7f92-11ee-a339-d2cbed391bce"
+                    }
+                ],
+                "priority": "routine",
+                "requester": {
+                    "display": "PractitionerRole",
+                    "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                },
+                "status": "requested",
+                "resourceType": "Task"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:49e98c98-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "CommunicationRequest/49e98c98-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "49e98c98-7f92-11ee-a339-d2cbed391bce",
+                "contained": [
+                    {
+                        "id": "49e97a14-7f92-11ee-a339-d2cbed391bce",
+                        "meta": {
+                            "profile": [
+                                "http://hl7.org.au/fhir/StructureDefinition/au-patient"
+                            ],
+                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                        },
+                        "name": [
+                            {
+                                "family": "Brown",
+                                "given": [
+                                    "Richard"
+                                ],
+                                "prefix": [
+                                    "Mr."
+                                ],
+                                "text": "Richard Brown",
+                                "use": "official"
+                            }
+                        ],
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "use": "mobile",
+                                "value": "0359546007"
+                            }
+                        ],
+                        "resourceType": "Patient"
+                    }
+                ],
+                "about": [
+                    {
+                        "display": "Task",
+                        "reference": "Task/49e7c746-7f92-11ee-a339-d2cbed391bce"
+                    }
+                ],
+                "authoredOn": "2023-11-10T16:27:57+10:00",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "reminder",
+                                "display": "Reminder",
+                                "system": "http://terminology.hl7.org/CodeSystem/communication-category"
+                            }
+                        ],
+                        "text": "Reminder"
+                    },
+                    {
+                        "coding": [
+                            {
+                                "code": "instruction",
+                                "display": "Instruction",
+                                "system": "http://terminology.hl7.org/CodeSystem/communication-category"
+                            }
+                        ],
+                        "text": "Instruction"
+                    }
+                ],
+                "doNotPerform": false,
+                "groupIdentifier": {
+                    "assigner": {
+                        "display": "East Melissa Medical Centre",
+                        "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                    },
+                    "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "PGN",
+                                "display": "Placer Group Number",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                            }
+                        ],
+                        "text": "Placer Group Number"
+                    },
+                    "value": "GTU72860-A0426"
+                },
+                "medium": [
+                    {
+                        "coding": [
+                            {
+                                "code": "WRITTEN",
+                                "display": "written",
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"
+                            }
+                        ],
+                        "text": "SMS"
+                    }
+                ],
+                "priority": "routine",
+                "recipient": [
+                    {
+                        "display": "Richard Brown",
+                        "reference": "#49e97a14-7f92-11ee-a339-d2cbed391bce",
+                        "type": "Patient"
+                    }
+                ],
+                "requester": {
+                    "display": "Richard Brown",
+                    "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                },
+                "sender": {
+                    "display": "Betoota Pathology",
+                    "reference": "Organization/15747546-7f87-11ee-8580-d2cbed391bce"
+                },
+                "status": "active",
+                "resourceType": "CommunicationRequest"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:49e99918-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Task/49e99918-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "49e99918-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-communicationrequest"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6",
+                    "tag": [
+                        {
+                            "code": "diagnostic-task-request",
+                            "display": "diagnostic task request",
+                            "system": "http://draft.hl7.org.au/fhir/diagnostic-orders/CodeSystem/diagnostic-task-tag"
+                        }
+                    ]
+                },
+                "authoredOn": "2023-11-10T16:27:57+10:00",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "fulfill",
+                            "display": "Fulfill the focal request",
+                            "system": "http://hl7.org/fhir/CodeSystem/task-code"
+                        }
+                    ],
+                    "text": "Fulfill"
+                },
+                "focus": {
+                    "display": "CommunicationRequest",
+                    "reference": "CommunicationRequest/49e98c98-7f92-11ee-a339-d2cbed391bce"
+                },
+                "for": {
+                    "display": "Richard Brown",
+                    "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                },
+                "groupIdentifier": {
+                    "assigner": {
+                        "display": "East Melissa Medical Centre",
+                        "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                    },
+                    "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "PGN",
+                                "display": "Placer Group Number",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                            }
+                        ],
+                        "text": "Placer Group Number"
+                    },
+                    "value": "GTU72860-A0426"
+                },
+                "intent": "order",
+                "owner": {
+                    "display": "Betoota Pathology",
+                    "reference": "Organization/15747546-7f87-11ee-8580-d2cbed391bce"
+                },
+                "partOf": [
+                    {
+                        "display": "Task",
+                        "reference": "Task/49e7c746-7f92-11ee-a339-d2cbed391bce"
+                    }
+                ],
+                "priority": "routine",
+                "requester": {
+                    "display": "PractitionerRole",
+                    "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                },
+                "status": "requested",
+                "resourceType": "Task"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:49e7c746-7f92-11ee-a339-d2cbed391bce",
+            "request": {
+                "method": "PUT",
+                "url": "Task/49e7c746-7f92-11ee-a339-d2cbed391bce"
+            },
+            "resource": {
+                "id": "49e7c746-7f92-11ee-a339-d2cbed391bce",
+                "meta": {
+                    "profile": [
+                        "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-group"
+                    ],
+                    "source": "creator:uiGeniePathOrder/v0.0.6",
+                    "tag": [
+                        {
+                            "code": "diagnostic-task-group",
+                            "display": "diagnostic task group",
+                            "system": "http://draft.hl7.org.au/fhir/diagnostic-orders/CodeSystem/diagnostic-task-tag"
+                        }
+                    ]
+                },
+                "authoredOn": "2023-11-10T16:27:57+10:00",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "fulfill",
+                            "display": "Fulfill the focal request",
+                            "system": "http://hl7.org/fhir/CodeSystem/task-code"
+                        }
+                    ],
+                    "text": "Fulfill"
+                },
+                "description": "Group workflow task for a set of fulfillment tasks",
+                "for": {
+                    "display": "Richard Brown",
+                    "reference": "Patient/141f4530-7f92-11ee-a339-d2cbed391bce"
+                },
+                "groupIdentifier": {
+                    "assigner": {
+                        "display": "East Melissa Medical Centre",
+                        "reference": "Organization/141eded8-7f92-11ee-a339-d2cbed391bce"
+                    },
+                    "system": "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003624523203666",
+                    "type": {
+                        "coding": [
+                            {
+                                "code": "PGN",
+                                "display": "Placer Group Number",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                            }
+                        ],
+                        "text": "Placer Group Number"
+                    },
+                    "value": "GTU72860-A0426"
+                },
+                "intent": "order",
+                "owner": {
+                    "display": "Betoota Pathology",
+                    "reference": "Organization/15747546-7f87-11ee-8580-d2cbed391bce"
+                },
+                "priority": "routine",
+                "requester": {
+                    "display": "PractitionerRole",
+                    "reference": "PractitionerRole/141eed88-7f92-11ee-a339-d2cbed391bce"
+                },
+                "status": "requested",
+                "resourceType": "Task"
+            }
+        }
+    ],
+    "timestamp": "2023-11-10T16:27:57+10:00",
+    "type": "transaction",
+    "resourceType": "Bundle"
+}

@@ -3,6 +3,7 @@ InstanceOf: DiagnosticCommunicationRequestPatient
 Description: "Diagnostic Communication Request Do Not Perform SMS"
 Usage:  #example
 * id = "66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
+* meta.tag = DiagnosticTaskTag#diagnostic-task-request
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN

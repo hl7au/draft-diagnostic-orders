@@ -12,7 +12,7 @@ Description: "Diagnostic Task Base is a shared foundation for both ServiceReques
   * tag contains 
       diagnostic-task 0..1 MS
   * tag[diagnostic-task]
-//    * system = Canonical(DiagnosticTaskTag)
+    * system = Canonical(DiagnosticTaskTag)
   * tag[diagnostic-task] from DiagnosticTaskTags (required)
     * ^short = "diagnostic-task-request | diagnostic-task-group"
 * groupIdentifier 1..1 MS

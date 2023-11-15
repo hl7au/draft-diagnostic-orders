@@ -1,8 +1,8 @@
-Instance: ServiceRequest-Claim
+Instance: ServiceRequestClaimOperation
 InstanceOf: OperationDefinition
 Title: "Diagnostic Request Claim Operation"
 Usage: #definition
-* url = "http://draft.hl7.org.au/fhir/diagnostic-orders/ServiceRequestClaimOperation"
+* url = "http://draft.hl7.org.au/fhir/diagnostic-orders/OperationDefinition/ServiceRequestClaimOperation"
 * name = "ServiceRequestClaimOperation"
 * title = "Diagnostic Request Claim Operation"
 * status = #active

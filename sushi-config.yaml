@@ -73,7 +73,7 @@ resources:
 #     exampleBoolean: true
 #   Patient/bad-example: omit
 
-  Bundle/d7661df8-6bb0-11ed-a340-acde48001122:
+  Bundle/49e7c746-7f92-11ee-a339-d2cbed391bce:
     name: Diagnostic Pathology Request Bundle
     description: Diagnostic Pathology Request Bundle example
     exampleBoolean: true
