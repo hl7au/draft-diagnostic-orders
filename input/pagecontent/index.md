@@ -36,3 +36,23 @@ The end goal is for this work to feed into the [Requesting Accelerator](https://
 FHIR<sup>&reg;&copy;</sup> connectathon events are key to the verification of the guide as being suitable for 
 implementation. This implementation guide will be used as the basis for Australian connectathon events.
 
+### Cross Version Analysis
+
+{% capture cross-version-analysis %}{% include cross-version-analysis.xhtml %}{% endcapture %}{{ cross-version-analysis | remove: '<p>' | remove: '</p>'}}
+
+### IG Dependencies
+
+This IG Contains the following dependencies on other IGs.
+
+{% include dependency-table.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### Copyrights
+
+{% capture ip-statement %}{% include ip-statements.xhtml %}{% endcapture %}
+
+{{ ip-statement | remove: '<p>' | remove: '</p>'}}
+
