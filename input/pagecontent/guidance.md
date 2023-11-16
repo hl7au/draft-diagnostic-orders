@@ -11,6 +11,7 @@ The IG was created with the context of pathology requests but attempts to allow 
     - A national authentication service that supported patient and healthcare service authentication and role information to allow more dynamic request discovery and transfer.
 
 ### Known Issues
+- Naming in this IG is all over the place between requests, requesting, erequests, erequesting, orders, diagnostics requests, diagnostic orders, etc.  This needs to be cleaned up.
 - Coding of tests is still a work in progress.  We reference the RCPA SPIA requesting value set for pathology but it would be useful to be more inclusive of other codes where there is a recognised business need.
 - There is minimal clinical context included with the pathology request.  We need to expand this based on the 80:20 principle to make the request more applicable out of the box.  In addition, we need to qualify clinical context that is generic for all requesting as opposed to specialised context for pathology or radiology requesting.
 - The foundations support the concept of directed requests but can also support undirected requests, relying on the patient to link the request to a particular filler.  We have concentrated on providing mechanisms and have avoided dictating specific policy settings so either option can be supported.
@@ -23,7 +24,13 @@ The IG was created with the context of pathology requests but attempts to allow 
 There are three key roles in the requesting service.  These should be read in the context of [Profiles and Extensions](profiles-and-extensions.html) for a description of the `ServiceRequest`, `Task`, and group `Task` relationships.
 
 - `Placer`:  The requesting clinician deposits the request into the FHIR service.  A request includes a set of `ServiceRequest`s, a set of fulfilment `Task`s, and a group `Task` that binds the fulfilment `Task`s. 
+    - The Placer **SHALL** create `ServiceRequest`s, `Task`s, and a group `Task` for each order, even for undirected orders.
+    - The Placer **SHOULD** infer order status from a combination of `status` and `businessStatus` present in **both** `Task`s and `groupTask`.
+    - The Placer **SHALL** order individual ServiceRequests using the `ServiceRequest.authoredOn` time.
 - `Filler`: A diagnostic service provider that watches for assigned fulfilment `Task`s, process the `ServiceRequest`s, and updates the `Task.status` for the individual `ServiceRequest`s as well as the group `Task`.
+    - The Filler **SHALL** update individual `Task` statuses as well as the group `Task` status.
+    - The Filler **SHALL** follow the correct order of `Task` status updates, e.g. a `Received` **SHALL** not proceed an `Accepted` status.
 - `Requesting Service`: This role is responsible for processing `claim` operations.  That is, to cancel any outstanding, assigned `Task`s for a request and create and assign ownership of new `Task`s.
+    - The Requesting Service **SHALL** cancel incomplete Tasks on `ServiceRequest` completion or claiming of an order by an alternate provider.
 
 {% include fsh-link-references.md %}
