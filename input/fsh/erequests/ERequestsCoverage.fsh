@@ -49,7 +49,7 @@ Description: "Coverage carries the funding option for the request including self
   * display ^short = "Name of insurer or self funded payor"
   * type ^short = "Organization | Patient | RelatedPerson"
 * class ..1
-* class ^short = " Coverage classification" 
+* class ^short = "Coverage classification" 
   * type
   * type = http://terminology.hl7.org/CodeSystem/coverage-class#plan
   * type ^short = "Plan type"

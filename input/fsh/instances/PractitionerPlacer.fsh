@@ -1,7 +1,9 @@
 Instance:  PractitionerPlacer
 InstanceOf: AUCorePractitioner
 Title: "Diagnostic Requester Practitioner"
+Description: "Diagnostic Requester Practitioner"
 Usage:  #example
+
 * id = "75179ab5-684b-405e-a50c-a81359804d91"
 * identifier[+] 
   * type

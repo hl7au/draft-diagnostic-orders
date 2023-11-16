@@ -1,7 +1,9 @@
 Instance:  PathologyRequestTaskFBC
 InstanceOf: DiagnosticTaskRequest
 Title: "Diagnostic Pathology Request Task FBC"
+Description: "Diagnostic Pathology Request Task FBC"
 Usage:  #example
+
 * id = "5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
 * meta.tag = DiagnosticTaskTag#diagnostic-task-request
 * groupIdentifier

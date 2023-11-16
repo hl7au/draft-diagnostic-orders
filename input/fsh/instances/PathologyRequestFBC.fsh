@@ -1,7 +1,9 @@
 Instance:  PathologyRequestFBC
 InstanceOf: ERequestsDiagnosticRequestPathology
 Title: "Diagnostic Pathology Request FBC"
+Description: "Diagnostic Pathology Request FBC"
 Usage:  #example
+
 * id = "681a8919-8d91-4868-a46a-ab6877ad27ea"
 * requisition
   * type

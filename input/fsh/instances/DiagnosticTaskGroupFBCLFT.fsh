@@ -1,7 +1,9 @@
 Instance:  DiagnosticTaskGroupFBCLFT
 InstanceOf: DiagnosticTaskGroup
 Title: "Diagnostic Task Group FBC LFT"
+Description: "Diagnostic Task Group FBC LFT"
 Usage:  #example
+
 * id = "28dc34e1-4999-4786-8238-9f8f8a5b78c2"
 * meta.tag = DiagnosticTaskTag#diagnostic-task-group
 * groupIdentifier

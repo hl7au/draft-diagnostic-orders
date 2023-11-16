@@ -1,15 +1,15 @@
-Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
-
 Instance: billingCoverage
-InstanceOf: Coverage
+InstanceOf: ERequestsCoverage
 Title: "Billing Coverage"
+Description: "Billing coverage based on bulk billing"
+
 Usage: #example
-* meta.profile = "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-coverage,"
-* meta.source = "creator:uiGeniePathOrder/v0.0.6"
 * beneficiary = Reference(ERequestsPatientSmith) "Joan Smith"
-* payor.display = "Medicare Australia"
-* payor.type = "Organization"
+* payor
+  * display = "Medicare Australia"
+  * type = "Organization"
 * status = #active
-* type.coding = $v3-ActCode#PUBLICPOL "public healthcare"
-* type.coding.version = "2018-08-12"
-* type.text = "Bulk Billed"
+* type
+  * coding = $v3-ActCode#PUBLICPOL "public healthcare"
+    * version = "2018-08-12"
+  * text = "Bulk Billed"

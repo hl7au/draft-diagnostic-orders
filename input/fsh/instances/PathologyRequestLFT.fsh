@@ -1,7 +1,9 @@
 Instance:  PathologyRequestLFT
 InstanceOf: ERequestsDiagnosticRequestPathology
 Title: "Diagnostic Pathology Request LFT"
+Description: "Diagnostic Pathology Request LFT"
 Usage:  #example
+
 * id = "3dff87af-5dac-40d5-be3d-9eaf9b3879b8"
 * requisition
   * type
