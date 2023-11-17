@@ -1,6 +1,7 @@
 Instance:  DiagnosticTaskCommunicationRequestUrgentPhone
 InstanceOf: DiagnosticTaskCommunicationRequest
 Description: "Diagnostic Communication Request Task Urgent Phone Call"
+Title: "Diagnostic Communication Request Task Urgent Phone Call"
 Usage:  #example
 * id = "509cefba-2250-449d-bfe7-ec2dd95d1e81"
 * meta.tag = DiagnosticTaskTag#diagnostic-task-request

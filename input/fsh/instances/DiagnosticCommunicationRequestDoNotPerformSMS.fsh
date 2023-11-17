@@ -1,5 +1,6 @@
 Instance:  DiagnosticCommunicationRequestDoNotPerformSMS
 InstanceOf: DiagnosticCommunicationRequestPatient
+Title: "Diagnostic Communication Request Do Not Perform SMS"
 Description: "Diagnostic Communication Request Do Not Perform SMS"
 Usage:  #example
 * id = "66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
