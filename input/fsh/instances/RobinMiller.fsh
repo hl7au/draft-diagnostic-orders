@@ -34,8 +34,8 @@ Usage: #example
     * display = "Department of Veterans' Affairs"
     * type = "Organization"
   * system = "http://ns.electronichealth.net.au/id/dva"
-  * type = #v2-0203-AU#DVG "DVA Gold Card Number"
-    * text = "DVA Gold Card Number"
+  * type = #v2-0203-AU#DVG "DVA Number (Gold Card)"
+    * text = "DVA Number (Gold Card)"
   * value = "TIV76893"
 * managingOrganization = Reference(SouthStephaniestadMedicalCentre) "South Stephaniestad Medical Centre"
 * name[+]

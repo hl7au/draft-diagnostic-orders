@@ -12,8 +12,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org.au/fhir/StructureDefinition/au-organization"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "active": true,
                 "address": [
@@ -78,8 +77,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org.au/fhir/StructureDefinition/au-practitioner"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "active": true,
                 "identifier": [
@@ -126,8 +124,7 @@
                     "profile": [
                         "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-practitionerrole",
                         "http://hl7.org.au/fhir/StructureDefinition/au-practitionerrole"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "active": true,
                 "identifier": [
@@ -188,8 +185,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org.au/fhir/StructureDefinition/au-patient"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "active": true,
                 "address": [
@@ -291,8 +287,7 @@
                 "meta": {
                     "profile": [
                         "http://hl7.org.au/fhir/StructureDefinition/au-organization"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "active": true,
                 "address": [
@@ -352,8 +347,7 @@
                     "profile": [
                         "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-diagnosticrequest-pathology",
                         "http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest"
-                    ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6"
+                    ]
                 },
                 "contained": [
                     {
@@ -361,8 +355,7 @@
                         "meta": {
                             "profile": [
                                 "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-coverage,"
-                            ],
-                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                            ]
                         },
                         "beneficiary": {
                             "display": "Richard Brown",
@@ -394,8 +387,7 @@
                             "profile": [
                                 "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-encounter",
                                 "http://hl7.org.au/fhir/StructureDefinition/au-encounter"
-                            ],
-                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                            ]
                         },
                         "class": {
                             "code": "AMB",
@@ -543,7 +535,6 @@
                     "profile": [
                         "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-request"
                     ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6",
                     "tag": [
                         {
                             "code": "diagnostic-task-request",
@@ -624,8 +615,7 @@
                         "meta": {
                             "profile": [
                                 "http://hl7.org.au/fhir/StructureDefinition/au-patient"
-                            ],
-                            "source": "creator:uiGeniePathOrder/v0.0.6"
+                            ]
                         },
                         "name": [
                             {
@@ -742,7 +732,6 @@
                     "profile": [
                         "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-communicationrequest"
                     ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6",
                     "tag": [
                         {
                             "code": "diagnostic-task-request",
@@ -820,7 +809,6 @@
                     "profile": [
                         "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/diagnostic-task-group"
                     ],
-                    "source": "creator:uiGeniePathOrder/v0.0.6",
                     "tag": [
                         {
                             "code": "diagnostic-task-group",
