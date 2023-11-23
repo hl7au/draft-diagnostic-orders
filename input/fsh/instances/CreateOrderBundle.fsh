@@ -8,7 +8,7 @@ Usage:  #example
 * timestamp = "2022-04-19T13:25:23.123+10:00"
 * entry[+]
   * fullUrl = "urn:uuid:1078d551-7be2-49f7-a122-c230b8757f2f"
-  * resource = ERequestsPatientSmith
+  * resource = PatientSmith
   * request
     * method = #PUT
     * url = "Patient/1078d551-7be2-49f7-a122-c230b8757f2f"

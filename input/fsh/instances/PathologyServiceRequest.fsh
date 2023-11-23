@@ -1,5 +1,5 @@
 Instance:  PathologyServiceRequest
-InstanceOf: ERequestsDiagnosticRequestPathology
+InstanceOf: ERequestDiagnosticRequestPathology
 Title: "Diagnostic Pathology Request text"
 Description: "Diagnostic Pathology Request - free text test name"
 Usage:  #example
@@ -16,8 +16,10 @@ Usage:  #example
 * intent = #order
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #routine
+* quantityQuantity
+  * value = 1
 * code.text = "FBC, LFT"
-* subject = Reference(ERequestsPatientSmith)
+* subject = Reference(PatientSmith)
 * authoredOn = "2022-04-19"
 * requester = Reference(PractitionerRolePlacer)
 * extension[+]
@@ -28,8 +30,8 @@ Usage:  #example
   * url = Canonical(ResultCopiesTo)
   * valueReference = Reference(OrganizationPlacer)
   * valueReference.display = "Small Family Trust"
-* insurance = Reference(ERequests-Inline-1-Coverage)
-* contained[0] = ERequests-Inline-1-Coverage
-* encounter = Reference(ERequests-Inline-2-Encounter)
-* contained[+] = ERequests-Inline-2-Encounter
+* insurance = Reference(Inline-1-Coverage)
+* contained[0] = Inline-1-Coverage
+* encounter = Reference(Inline-2-Encounter)
+* contained[+] = Inline-2-Encounter
 

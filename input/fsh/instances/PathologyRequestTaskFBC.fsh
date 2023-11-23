@@ -1,11 +1,11 @@
 Instance:  PathologyRequestTaskFBC
-InstanceOf: DiagnosticTaskRequest
+InstanceOf: ERequestTaskRequest
 Title: "Diagnostic Pathology Request Task FBC"
 Description: "Diagnostic Pathology Request Task FBC"
 Usage:  #example
 
 * id = "5cdc3259-e41d-461e-a5fb-8e68ed6c0c1e"
-* meta.tag = DiagnosticTaskTag#diagnostic-task-request
+* meta.tag = ERequestTaskTag#diagnostic-task-request
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN
@@ -16,10 +16,10 @@ Usage:  #example
   * assigner.display = "Small Family Trust"
 * status = #requested
 * intent = #order
-* priority = #routine
+* priority = #urgent
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
 * focus = Reference(PathologyRequestFBC)
-* for = Reference(ERequestsPatientSmith)
+* for = Reference(PatientSmith)
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
   * identifier

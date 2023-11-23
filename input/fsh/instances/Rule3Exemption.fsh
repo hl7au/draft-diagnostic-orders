@@ -1,5 +1,5 @@
 Instance: Rule3Exemption
-InstanceOf: ERequestsDiagnosticRequestPathology
+InstanceOf: ERequestDiagnosticRequestPathology
 Title: "ServiceRequest with Rule 3 Exemption"
 Description: "ServiceRequest with Rule 3 Exemption"
 Usage: #example
@@ -9,7 +9,7 @@ Usage: #example
 * contained[+] = billingCoverageInline
 * contained[+] = patientEncounterInline
 * extension[+]
-  * url = "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/eorders-servicerequest-rule3exemption"
+  * url = "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/erequest-servicerequest-rule3exemption"
   * valueBoolean = true
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/servicerequest-precondition"
@@ -46,8 +46,9 @@ Usage: #example
   * end = "2024-05-15"
   * start = "2023-11-15"
 * patientInstruction = "Some patient instructions"
-* priority = #urgent
-* quantityQuantity.value = 6
+* priority = #routine
+* quantityQuantity
+  * value = 6
 * reasonCode.text = "A clinical note"
 * requester = Reference(DrPennyWalkerAtSouthStephaniestad) "Dr Penney Walker @ South Stephaniestad"
 * requisition
@@ -68,6 +69,9 @@ Usage: #example
 Instance: pregnantInline
 InstanceOf: AUCorePregnancyStatus
 Usage: #inline
+* text
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnant</div>" 
+  * status = #generated
 * category = $observation-category#social-history "Social History"
   * text = "Social History"
 * code = $loinc#82810-3 "Pregnancy status"
@@ -81,6 +85,9 @@ Usage: #inline
 Instance: LMPDateInline
 InstanceOf: AUCoreLastMenstrualPeriod
 Usage: #inline
+* text
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">LMP: 2023-11-01</div>" 
+  * status = #generated
 * category = $observation-category#survey "Survey"
   * text = "Survey"
 * code = $sct#21840007 "Date of last menstrual period"
@@ -93,6 +100,9 @@ Usage: #inline
 Instance: GestAgeInline
 InstanceOf: AUCoreGestationalAge
 Usage: #inline
+* text
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Gestational Age: 14 days</div>" 
+  * status = #generated
 * category = $observation-category#survey "Survey"
   * text = "Survey"
 * code.coding[0] = $sct#57036006 "Foetal gestational age"
@@ -106,7 +116,7 @@ Usage: #inline
 * valueQuantity = 14 'd' "day"
 
 Instance: billingCoverageInline
-InstanceOf: ERequestsCoverage
+InstanceOf: ERequestCoverage
 Usage: #inline
 * beneficiary = Reference(RobinMiller) "Robin Miller"
 * payor
@@ -119,7 +129,7 @@ Usage: #inline
   * text = "Bulk Billed"
 
 Instance: patientEncounterInline
-InstanceOf: ERequestsEncounter
+InstanceOf: ERequestEncounter
 Usage: #inline
 * class = $v3-ActCode#AMB "ambulatory"
 * status = #finished

@@ -1,5 +1,5 @@
 Instance:  ConsentDisclosureWithdrawl
-InstanceOf: ERequestsConsentWithdrawl
+InstanceOf: ERequestConsentWithdrawl
 Title: "Diagnostic Consent withdraw upload MHR"
 Description: "Diagnostic Consent to indicate do not upload to MHR"
 Usage:  #example
@@ -13,11 +13,11 @@ Usage:  #example
 // Canadian example uses Loinc 59284-0 (Consent Document)
 * category[+] = http://terminology.hl7.org/CodeSystem/v3-ActCode#IDSCL
 
-* patient = Reference(ERequestsPatientSmith)
+* patient = Reference(PatientSmith)
 * dateTime = "2022-04-19"
 
 // not in Canadian example
-* performer[+] = Reference(ERequestsPatientSmith)
+* performer[+] = Reference(PatientSmith)
 
 * organization[+] = Reference(OrganizationPlacer)
 

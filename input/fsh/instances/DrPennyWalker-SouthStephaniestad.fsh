@@ -1,5 +1,5 @@
 Instance: DrPennyWalkerAtSouthStephaniestad
-InstanceOf: ERequestsPractitionerRole
+InstanceOf: ERequestPractitionerRole
 Title: "Dr Penny Walker @ South Stephaniestad Medical Centre"
 Description: "Dr Penny Walker @ South Stephaniestad Medical Centre"
 Usage: #example

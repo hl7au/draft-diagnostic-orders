@@ -1,5 +1,5 @@
 Instance: 511ae9a0-834b-11ee-91b6-d2cbed391bce
-InstanceOf: DiagnosticPractitionerRoleContact
+InstanceOf: ERequestPractitionerRoleContact
 Title: "PractitionerRole for Urgent Communication"
 Description: "PractitionerRole for urgent contact of result."
 Usage: #example
