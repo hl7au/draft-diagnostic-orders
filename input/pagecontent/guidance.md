@@ -24,13 +24,13 @@ The IG was created with the context of pathology requests but attempts to allow 
 There are three key roles in the requesting service.  These should be read in the context of [Profiles and Extensions](profiles-and-extensions.html) for a description of the `ServiceRequest`, `Task`, and group `Task` relationships.
 
 - `Placer`:  The requesting clinician deposits the request into the FHIR service.  A request includes a set of `ServiceRequest`s, a set of fulfilment `Task`s, and a group `Task` that binds the fulfilment `Task`s. 
-    - The Placer **SHALL** create `ServiceRequest`s, `Task`s, and a group `Task` for each order, even for undirected orders.
-    - The Placer **SHOULD** infer order status from a combination of `status` and `businessStatus` present in **both** `Task`s and `groupTask`.
-    - The Placer **SHALL** order individual ServiceRequests using the `ServiceRequest.authoredOn` time.
+    - The Placer **SHALL** create `ServiceRequest`s, `Task`s, and a group `Task` for each request, even for undirected requests.
+    - The Placer **SHOULD** infer request status from a combination of `status` and `businessStatus` present in **both** `Task`s and `groupTask`.
+    - The Placer **SHALL** request individual ServiceRequests using the `ServiceRequest.authoredOn` time.
 - `Filler`: A diagnostic service provider that watches for assigned fulfilment `Task`s, process the `ServiceRequest`s, and updates the `Task.status` for the individual `ServiceRequest`s as well as the group `Task`.
     - The Filler **SHALL** update individual `Task` statuses as well as the group `Task` status.
-    - The Filler **SHALL** follow the correct order of `Task` status updates, e.g. a `Received` **SHALL** not proceed an `Accepted` status.
+    - The Filler **SHALL** follow the correct request of `Task` status updates, e.g. a `Received` **SHALL** not proceed an `Accepted` status.
 - `Requesting Service`: This role is responsible for processing `claim` operations.  That is, to cancel any outstanding, assigned `Task`s for a request and create and assign ownership of new `Task`s.
-    - The Requesting Service **SHALL** cancel incomplete Tasks on `ServiceRequest` completion or claiming of an order by an alternate provider.
+    - The Requesting Service **SHALL** cancel incomplete Tasks on `ServiceRequest` completion or claiming of an request by an alternate provider.
 
 {% include fsh-link-references.md %}

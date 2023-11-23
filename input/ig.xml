@@ -2,11 +2,11 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.au.draft.diagnostic-orders"/>
   <url value="http://draft.hl7.org.au/fhir/diagnostic-orders/ImplementationGuide/hl7.fhir.au.draft.diagnostic-orders"/>
-  <version value="0.0.1"/>
+  <version value="0.0.8"/>
   <!-- Change to whatever is appropriate -->
-  <name value="DiagnosticOrders"/>
+  <name value="eRequesting"/>
   <!-- Change to whatever is appropriate -->
-  <title value="Diagnostic Orders"/>
+  <title value="eRequesting"/>
   <status value="draft"/>
   <experimental value="true"/>
   <!-- Change to whatever is appropriate -->
@@ -104,11 +104,11 @@
 				<title value="Downloads"/>
 				<generation value="markdown"/>
 			</page>
-			<!--<page>
+			<page>
 				<nameUrl value="changes.html"/>
 				<title value="Change Log"/>
 				<generation value="markdown"/>
-			</page>-->
+			</page>
 		</page>
     <!-- copyright year is a mandatory parameter -->
     <parameter>

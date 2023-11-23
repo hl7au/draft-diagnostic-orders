@@ -4,11 +4,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.au.draft.diagnostic-orders
 canonical: http://draft.hl7.org.au/fhir/diagnostic-orders
-name: DiagnosticRequests
+name: ERequesting
 title: Diagnostic Requests
 status: draft
 experimental: true
-version: 0.0.7
+version: 0.0.8
 license: CC0-1.0
 fhirVersion: 4.0.1
 copyrightYear: 2023+
@@ -25,7 +25,7 @@ dependencies:
 #    uri: http://build.fhir.org/ig/hl7au/au-fhir-base/package.tgz
 
   hl7.fhir.au.core:
-    version: 0.2.0-preview
+    version: 0.2.2-preview
 
 #  hl7.fhir.au.pd: current
 #  au.csiro.fhir.au-primarycare: current

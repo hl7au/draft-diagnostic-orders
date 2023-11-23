@@ -24,7 +24,7 @@ Usage:  #example
 // Request Tasks
 * entry[+]
   * fullUrl = "urn:uuid:28dc34e1-4999-4786-8238-9f8f8a5b78c2"
-  * resource = DiagnosticTaskGroupFBCLFT
+  * resource = TaskGroupFBCLFT
   * request
     * method = #PUT
     * url = "Task/28dc34e1-4999-4786-8238-9f8f8a5b78c2"
@@ -52,7 +52,7 @@ Usage:  #example
 // CommunicationRequest DoNotPerformSMS
 * entry[+]
   * fullUrl = "urn:uuid:66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
-  * resource = DiagnosticCommunicationRequestDoNotPerformSMS
+  * resource = CommunicationRequestDoNotPerformSMS
   * request
     * method = #PUT
     * url = "CommunicationRequest/66ad4d84-f611-11ed-a1fc-d2cbed391bcf"
@@ -60,7 +60,7 @@ Usage:  #example
 // CommunicationRequest Task DoNotPerformSMS
 * entry[+]
   * fullUrl = "urn:uuid:e8ed2aba-8127-47fa-b339-d9e134409f3f"
-  * resource = DiagnosticTaskCommunicationRequestDoNotPerformSMS
+  * resource = TaskCommunicationRequestDoNotPerformSMS
   * request
     * method = #PUT
     * url = "Task/e8ed2aba-8127-47fa-b339-d9e134409f3f"
@@ -68,7 +68,7 @@ Usage:  #example
 // CommunicationRequest UrgentPhone 
 * entry[+]
   * fullUrl = "urn:uuid:66ad4c83-f611-11ed-a1fc-d2cbed391bcf"
-  * resource = DiagnosticCommunicationRequestUrgentPhone
+  * resource = CommunicationRequestUrgentPhone
   * request
     * method = #PUT
     * url = "CommunicationRequest/66ad4c83-f611-11ed-a1fc-d2cbed391bcf"
@@ -76,7 +76,7 @@ Usage:  #example
 // CommunicationRequest Task UrgentPhone
 * entry[+]
   * fullUrl = "urn:uuid:509cefba-2250-449d-bfe7-ec2dd95d1e81"
-  * resource = DiagnosticTaskCommunicationRequestUrgentPhone
+  * resource = TaskCommunicationRequestUrgentPhone
   * request
     * method = #PUT
     * url = "Task/509cefba-2250-449d-bfe7-ec2dd95d1e81"
@@ -84,7 +84,7 @@ Usage:  #example
 // Referenced resources
 * entry[+]
   * fullUrl = "urn:uuid:1078d551-7be2-49f7-a122-c230b8757f2f"
-  * resource = ERequestsPatientSmith
+  * resource = PatientSmith
   * request
     * method = #PUT
     * url = "Patient/1078d551-7be2-49f7-a122-c230b8757f2f"

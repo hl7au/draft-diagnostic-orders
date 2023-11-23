@@ -14,12 +14,13 @@ This guide is divided into several pages which are listed at the top of each pag
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Guidance](guidance.html): This page provides guidance on using the profiles defined in this guide.
-- [Workflow](workflow.html): Ordering workflows for the common diagnostic request approaches.
+- [Workflow](workflow.html): Requesting workflows for the common diagnostic request approaches.
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This set of pages describes the profiles and extensions that are defined in this guide to represent Australian local concepts using FHIR. Each profile page includes a narrative description, guidance, and formal definition. Although the guidance typically focuses on the profiled elements and seeks to provide a ‘how-to’ guide when representing concepts, it may also may focus on un-profiled elements to aid with implementation.
   - [Search Parameters and Operations](search-parameters-and-operations.html): Additional search parameters and operations needed by IG.
   - [Terminology](terminology.html): This set of pages lists the value sets and code systems defined in this guide.
 - [Examples](examples.html): This page lists all the examples used in this guide.
+- [Change Log](changes.html): Changes between versions of the eRequesting IG.
 - [Downloads](downloads.html): This page provides links to downloadable artefacts including the AU Base FHIR NPM package.
 
 

@@ -1,5 +1,5 @@
 Instance:  PractitionerRolePlacer
-InstanceOf: ERequestsPractitionerRole
+InstanceOf: ERequestPractitionerRole
 Title: "Diagnostic Requester PractitionerRole"
 Description: "Diagnostic Requester PractitionerRole"
 Usage:  #example

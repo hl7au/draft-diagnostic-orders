@@ -1,5 +1,5 @@
 Instance: patientEncounter
-InstanceOf: ERequestsEncounter
+InstanceOf: ERequestEncounter
 Title: "Patient Encounter"
 Description: "Patient Encounter to designate out of hospital care."
 Usage: #example

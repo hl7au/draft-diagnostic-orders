@@ -2,9 +2,9 @@
 
 The IG is focussed on the use of `ServiceRequest` and `Task` resources to support the process of diagnostic request and request fulfilment.  While they are all linked through a common group `Task`, each of these resources also share reference to a group identifier in `requisition` and `groupIdentifier`.
 
-{% include img.html img="eRequestServReqTask.png" %}
+{% include img.html img="eRequestServReqTaskRequestGroup.png" %}
 
-`ServiceRequest`s represent the request of a single test or procedure.  In Australia, various policy, regulatory, and funding approaches means that we treat a request group as the first-class foundation of an order or request.  A `Task` group should be the focus of request discovery.  For example,
+`ServiceRequest`s represent the request of a single test or procedure.  In Australia, various policy, regulatory, and funding approaches means that we treat a request group as the first-class foundation of a request.  A `Task` group should be the focus of request discovery.  For example,
 
 ~~~
 GET /Task?status=requested,cancelled&_tag=diagnostic-task-group&_revinclude=Task:part-of&_include:iterate=Task:focus&_include=Task:owner&       
@@ -14,7 +14,7 @@ GET /Task?status=requested,cancelled&_tag=diagnostic-task-group&_revinclude=Task
 
 The group `Task` is identified via the `Task._tag` value.  From the group `Task`, the  request `Task`s are picked up along with their `ServiceRequest`s.
 
-The placer must manage the integrity of the `Task` set.  That is, the data in the group `Task`  should reflect that within the request `Task`s.  The group `Task` carries information about the whole order so an appropriate summary `Task.status` should be provided by the filler system.  Some placer systems will only reflect the group `Task` fulfilment data rather than that provided by the individual request `Task`s. 
+The placer must manage the integrity of the `Task` set.  That is, the data in the group `Task`  should reflect that within the request `Task`s.  The group `Task` carries information about the whole request so an appropriate summary `Task.status` should be provided by the filler system.  Some placer systems will only reflect the group `Task` fulfilment data rather than that provided by the individual request `Task`s. 
 
 ### Profiles
 
@@ -45,4 +45,4 @@ The following [extensions]({{site.data.fhir.path}}extensibility.html) have been 
 
 The following profiles have been defined for this implementation guide.  Contained resources are indicated by a dashed outline.
 
-{% include img.html img="eRequestResources.png" caption="Profiles used for Requesting" %}
+{% include img.html img="eRequestResourcesRequestGroup.png" caption="Profiles used for Requesting" %}

@@ -1,11 +1,11 @@
 Instance:  PathologyRequestTask
-InstanceOf: DiagnosticTaskRequest
+InstanceOf: ERequestTaskRequest
 Title: "Diagnostic Pathology Task Request"
 Description: "Diagnostic Pathology Task Request"
 Usage:  #example
 
 * id = "a37e5691-3144-4e59-b836-5eaa54ed4f67"
-* meta.tag = DiagnosticTaskTag#diagnostic-task-request
+* meta.tag = ERequestTaskTag#diagnostic-task-request
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN
@@ -19,7 +19,7 @@ Usage:  #example
 * priority = #routine
 * code.coding = http://hl7.org/fhir/CodeSystem/task-code#fulfill
 * focus = Reference(PathologyServiceRequest)
-* for = Reference(ERequestsPatientSmith)
+* for = Reference(PatientSmith)
 * authoredOn = "2022-04-19"
 * requester = Reference(PractitionerRolePlacer)
   * identifier

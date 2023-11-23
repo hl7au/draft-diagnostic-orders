@@ -4,7 +4,7 @@ Title: "Diagnostic Request CopiesTo SearchParameter"
 Usage: #definition
 * url = "http://draft.hl7.org.au/fhir/diagnostic-orders/SearchParameter/ServiceRequestCopiesTo"
 * version = "1.0"
-* name = "DiagnosticRequestCopiesToSearchParameter"
+* name = "ERequestCopiesToSearchParameter"
 * status = #active
 * description = "Search parameter for ServiceRequest by copiesTo reference"
 * code = #copiesTo

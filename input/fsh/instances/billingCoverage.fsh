@@ -1,10 +1,10 @@
 Instance: billingCoverage
-InstanceOf: ERequestsCoverage
+InstanceOf: ERequestCoverage
 Title: "Billing Coverage"
 Description: "Billing coverage based on bulk billing"
 
 Usage: #example
-* beneficiary = Reference(ERequestsPatientSmith) "Joan Smith"
+* beneficiary = Reference(PatientSmith) "Joan Smith"
 * payor
   * display = "Medicare Australia"
   * type = "Organization"
