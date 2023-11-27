@@ -73,3 +73,7 @@ Description: "Diagnostic Service Request Base used for Pathology and Radiology. 
 * contained[coverage] only Coverage
 * contained[supportingObs] only Observation
 
+Invariant: inv-narrative-for-supportinginfo-servicerequest
+Description: "Always require a narrative for supportingInfo references in ServiceRequest"
+Severity: #error
+Expression: "resolve().text.div.exists()"
