@@ -43,3 +43,8 @@ Description: "Diagnostic communication request to clinical provider.  This is us
 * contained contains 
     recipient 1..1 MS
 * contained[recipient] only ERequestPractitionerRoleContact
+
+Invariant: inv-urgent-comms-urgent-request
+Description: "An urgent CommunicationRequest to Practitioner must be based on an urgent ServiceRequest"
+Severity: #error
+Expression: "resolve().priority = 'urgent'"
