@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.au.draft.diagnostic-orders"/>
   <url value="http://draft.hl7.org.au/fhir/diagnostic-orders/ImplementationGuide/hl7.fhir.au.draft.diagnostic-orders"/>
-  <version value="0.0.8"/>
+  <version value="0.0.9"/>
   <!-- Change to whatever is appropriate -->
   <name value="eRequesting"/>
   <!-- Change to whatever is appropriate -->
@@ -83,17 +83,15 @@
 				<title value="Search Parameters and Operations"/>
 				<generation value="markdown"/>
 			</page>
-			<!--<page>
 				<nameUrl value="terminology.html"/>
 				<title value="Terminology"/>
 				<generation value="markdown"/>
-			</page>-->
-			<!--
+			</page>
 			<page>
 				<nameUrl value="capability-statements.html"/>
 				<title value="Capability Statements"/>
 				<generation value="markdown"/>
-			</page>-->
+			</page>
 			<page>
 				<nameUrl value="examples.html"/>
 				<title value="Examples"/>
