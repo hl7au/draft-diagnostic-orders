@@ -9,7 +9,7 @@ Description: "Diagnostic communication request to clinical provider.  This is us
   * ^short = "active"
 * priority = #urgent (exactly)
 * about 1.. MS
-* about obeys inv-urgent-comms-urgent-request
+* about obeys urgent-pract-comms
 * about only Reference (ERequestDiagnosticRequestPathology or ERequestDiagnosticRequestRadiology)
   * ^short = "Diagnostic request the urgent communication is about"
 * authoredOn 1..1 MS
@@ -44,7 +44,7 @@ Description: "Diagnostic communication request to clinical provider.  This is us
     recipient 1..1 MS
 * contained[recipient] only ERequestPractitionerRoleContact
 
-Invariant: inv-urgent-comms-urgent-request
+Invariant: urgent-pract-comms
 Description: "An urgent CommunicationRequest to Practitioner must be based on an urgent ServiceRequest"
 Severity: #error
 Expression: "resolve().priority = 'urgent'"

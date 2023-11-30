@@ -8,12 +8,12 @@ Description: "Doctor numbers are used by some diagnostic service providers to un
 * value 1..1
   * ^short = "Doctor Number"
 * system 1..1
-* system obeys inv-hpioscoped-serviceproviderindividual
+* system obeys hpioscoped-serviceproviderindividual
   * ^short = "HPI-O scoped local identifier for Lab Doctor Codes. http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/<hpi-o of lab>"
 * assigner.display 1..1
   * ^short = "Filler organization name"
 
-Invariant: inv-hpioscoped-serviceproviderindividual
+Invariant: hpioscoped-serviceproviderindividual
 Description: "System format http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/<hpi-o of lab>"
 Severity: #error
 Expression: "matches('^http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/800362[0-9]{10}$')"
