@@ -5,6 +5,7 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v2-0203-AU = http://terminology.hl7.org.au/CodeSystem/v2-0203
 
 Alias: $RCPA-RP = https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1
+Alias: $RCPA-SPIA = https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3
 Alias: $order-identifier-AU = http://terminology.hl7.org.au/ValueSet/order-identifier-type
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
