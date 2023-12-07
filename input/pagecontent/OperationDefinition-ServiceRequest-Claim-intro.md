@@ -1,1 +1,1 @@
-The claim operation is used for both undirected requests where no organisation has been assigned to the fulfilment `Task` for the request as well as for the transfer for a directed request where the fulfilment `Task.owner` was assigned at the time the request was placed.
+The claim operation is used for both Late Patient Choice requests where no organisation has been chosen for the fulfilment `Task` for the request as well as for the transfer for an Early Patient Choice request where the fulfilment `Task.owner` was chosen at the time the request was placed.
