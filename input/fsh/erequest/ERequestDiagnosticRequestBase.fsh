@@ -13,7 +13,7 @@ Description: "Diagnostic Service Request Base used for Pathology and Radiology. 
 * requisition ^type.profile = Canonical(ERequestPlacerGroupNumber)
 * status from ERequestServiceRequestStatus (required)
 * status ^short = "active | completed | revoked"
-* intent = #order
+* intent = #option (exactly)
 * category 1..1 MS
 * category from ERequestServiceRequestCategory (required)
 * priority MS
