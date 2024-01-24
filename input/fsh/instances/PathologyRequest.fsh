@@ -21,11 +21,11 @@ Usage: #example
   * assigner = Reference(OrganizationPlacer)
     * display = "Small Family Trust"
 * status = #active
-* intent = #order
+* intent = #option
 * category = $sct#108252007 "Laboratory procedure"
   * text = "Laboratory procedure"
 * priority = #routine
-* code = $sct#117923009 "Measurement of ovary antibody"
+* code = $sct#117923009 
   * text = "Measurement of ovary antibody"
 * quantityQuantity
   * value = 1
