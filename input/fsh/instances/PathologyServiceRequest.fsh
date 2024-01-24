@@ -13,7 +13,7 @@ Usage:  #example
   * assigner = Reference(OrganizationPlacer)
   * assigner.display = "Small Family Trust"
 * status = #active
-* intent = #order
+* intent = #option
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #routine
 * quantityQuantity
