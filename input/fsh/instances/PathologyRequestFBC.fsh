@@ -14,10 +14,10 @@ Usage:  #example
   * assigner = Reference(OrganizationPlacer)
   * assigner.display = "Small Family Trust"
 * status = #active
-* intent = #order
+* intent = #option
 * category = $sct#108252007 "Laboratory procedure"
 * priority = #urgent
-* code.coding = $sct#26604007 "FBC - Full blood count"
+* code.coding = $sct#26604007
 * code.text = "FBC"
 * quantityQuantity
   * value = 1
