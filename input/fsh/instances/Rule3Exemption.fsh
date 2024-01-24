@@ -27,7 +27,7 @@ Usage: #example
 * category = $sct#108252007 "Laboratory procedure"
   * text = "Laboratory procedure"
 * code
-  * coding = $sct#13070009 "Hepatitis A virus antibody, IgG type"
+  * coding = $sct#13070009
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/valueset-reference"
       * valueUri = "https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3|3.0.1"
@@ -41,7 +41,7 @@ Usage: #example
   * value = "PON-Genie-20231115100957-0655"
 * insurance = Reference(billingCoverageInline) "Coverage"
   * type = "Coverage"
-* intent = #order
+* intent = #option
 * occurrencePeriod
   * end = "2024-05-15"
   * start = "2023-11-15"
