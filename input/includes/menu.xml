@@ -27,16 +27,18 @@
       <li>
         <a href="terminology.html">Terminology</a>
       </li>
-	  <!--
-	  <li>
+	    <!--
+      <li>
         <a href="capability-statements.html">Capability Statements</a>
       </li>
-	  -->
+      -->
     </ul>
   </li>
-  <!--<li>
+  <!-- 
+  <li>
     <a href="security.html">Security</a>
-  </li>-->
+  </li>
+  -->
   <li>
     <a href="examples.html">Examples</a>
   </li>
