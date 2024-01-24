@@ -21,7 +21,7 @@ jurisdiction: urn:iso:std:iso:3166#AU
 
 dependencies:
   hl7.fhir.au.base:
-    version: 4.1.0
+    version: 4.1.2-preview
 #    uri: http://build.fhir.org/ig/hl7au/au-fhir-base/package.tgz
 
   hl7.fhir.au.core:
