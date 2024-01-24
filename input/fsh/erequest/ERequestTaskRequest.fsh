@@ -2,7 +2,7 @@ Profile: ERequestTaskRequest
 Parent: ERequestTaskBase
 Id: erequest-task-request
 Title: "Diagnostic Task Request"
-Description: "Diagnostic Task Request to track fulfilment of a Diagnostic Request. See [DiagnosticTaskBase](StructureDefinition-diagnostic-task-base.html) for a description of the expected `status` changes."
+Description: "Diagnostic Task Request to track fulfilment of a Diagnostic Request. See [ERequestTaskBase](StructureDefinition-erequest-task-base.html) for a description of the expected `status` changes."
 * . ^short = "Diagnostic Task Request"
 * meta.tag[diagnostic-task] = ERequestTaskTag#diagnostic-task-request
   * ^short = "diagnostic-task-request"
