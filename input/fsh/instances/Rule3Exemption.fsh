@@ -3,19 +3,20 @@ InstanceOf: ERequestDiagnosticRequestPathology
 Title: "ServiceRequest with Rule 3 Exemption"
 Description: "ServiceRequest with Rule 3 Exemption"
 Usage: #example
-* contained[+] = pregnantInline
-* contained[+] = LMPDateInline
-* contained[+] = GestAgeInline
-* contained[+] = billingCoverageInline
-* contained[+] = patientEncounterInline
-* extension[+]
+* contained[supportingObs][+] = pregnantInline
+* contained[supportingObs][+] = LMPDateInline
+* contained[supportingObs][+] = GestAgeInline
+* contained[coverage] = billingCoverageInline
+* contained[encounter] = patientEncounterInline
+
+* extension[requestRule3exemption]
   * url = "http://draft.hl7.org.au/fhir/diagnostic-orders/StructureDefinition/erequest-servicerequest-rule3exemption"
   * valueBoolean = true
-* extension[+]
+* extension[requestFasting]
   * url = "http://hl7.org/fhir/StructureDefinition/servicerequest-precondition"
   * valueCodeableConcept = $sct#726054005 "After fasting"
     * text = "Fasting"
-* extension[+]
+* extension[copiesto][+]
   * url = "http://hl7.org.au/fhir/StructureDefinition/result-copies-to"
   * valueReference = Reference(DrAmberBarnes) "Amber Barnes"
     * identifier[+]
@@ -59,11 +60,11 @@ Usage: #example
   * value = "GEN69798-A0427"
 * status = #active
 * subject = Reference(RobinMiller) "Robin Miller"
-* supportingInfo[0] = Reference(pregnantInline) "Observation"
+* supportingInfo[pregnancystatus] = Reference(pregnantInline) "Observation"
   * type = "Observation"
-* supportingInfo[+] = Reference(LMPDateInline) "Observation"
+* supportingInfo[lastmenstrualperiod] = Reference(LMPDateInline) "Observation"
   * type = "Observation"
-* supportingInfo[+] = Reference(GestAgeInline) "Observation"
+* supportingInfo[gestationalage] = Reference(GestAgeInline) "Observation"
   * type = "Observation"
 
 Instance: pregnantInline
@@ -72,7 +73,7 @@ Usage: #inline
 * text
   * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Pregnant</div>" 
   * status = #generated
-* category = $observation-category#social-history "Social History"
+* category[socialHistory] = $observation-category#social-history "Social History"
   * text = "Social History"
 * code = $loinc#82810-3 "Pregnancy status"
   * text = "Pregnancy status"
@@ -105,9 +106,10 @@ Usage: #inline
   * status = #generated
 * category = $observation-category#survey "Survey"
   * text = "Survey"
-* code.coding[0] = $sct#57036006 "Foetal gestational age"
-* code.coding[+] = $loinc#11885-1 "Gestational age Estimated from last menstrual period"
-* code.text = "Gestational Age"
+* code
+  * coding[loincGestationalAgeByLMP] = $loinc#11885-1 "Gestational age Estimated from last menstrual period"
+  * coding[+] = $sct#57036006 "Foetal gestational age"
+  * text = "Gestational Age"
 * effectiveDateTime = "2023-11-15T10:10:00+10:00"
 * focus
   * display = "Baby of Miller, Robin Mrs."

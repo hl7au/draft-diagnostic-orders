@@ -22,16 +22,16 @@ Usage:  #example
 * subject = Reference(PatientSmith)
 * authoredOn = "2022-04-19"
 * requester = Reference(PractitionerRolePlacer)
-* extension[+]
+* extension[copiesto][+]
   * url = Canonical(ResultCopiesTo)
   * valueReference = Reference(PractitionerPlacer)
   * valueReference.display = "Dr Jane Doe"
-* extension[+]
+* extension[copiesto][+]
   * url = Canonical(ResultCopiesTo)
   * valueReference = Reference(OrganizationPlacer)
   * valueReference.display = "Small Family Trust"
 * insurance = Reference(Inline-1-Coverage)
-* contained[0] = Inline-1-Coverage
+* contained[coverage] = Inline-1-Coverage
 * encounter = Reference(Inline-2-Encounter)
-* contained[+] = Inline-2-Encounter
+* contained[encounter] = Inline-2-Encounter
 

@@ -5,7 +5,7 @@ Description: "Diagnostic Placer Organization"
 Usage:  #example
 
 * id = "fdcca47c-e554-46e5-a71f-91ec855faa29"
-* identifier[+] 
+* identifier[hpio] 
   * type
     * coding[+] = $v2-0203-AU#NOI
     * text = "HPI-O"

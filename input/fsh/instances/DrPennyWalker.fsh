@@ -4,7 +4,7 @@ Title: "Dr Penny Walker Practitioner"
 Description: "Dr Penny Walker Practitioner"
 Usage: #example
 * active = true
-* identifier[+]
+* identifier[hpii]
   * system = "http://ns.electronichealth.net.au/id/hi/hpii/1.0"
   * type = $v2-0203#NPI "National provider identifier"
     * text = "HPI-I"

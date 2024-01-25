@@ -4,14 +4,14 @@ Title: "Diagnostic Pathology Request"
 Description: "Diagnostic Pathology Request example"
 Usage: #example
 * id = "8dbe2623-c7f4-469e-a10a-a2073a62dd13"
-* contained[0] = Inline-1-Coverage
-* contained[+] = Inline-2-Encounter
-* contained[+] = Inline-3-PregnancyStatusObservation
-* contained[+] = Inline-4-DateOfLastMenstrualPeriod
-* contained[+] = Inline-5-GestationalAgeObservation
+* contained[coverage] = Inline-1-Coverage
+* contained[encounter] = Inline-2-Encounter
+* contained[supportingObs][+] = Inline-3-PregnancyStatusObservation
+* contained[supportingObs][+] = Inline-4-DateOfLastMenstrualPeriod
+* contained[supportingObs][+] = Inline-5-GestationalAgeObservation
 
-* extension[0] = ResultCopiesTo-DrFields
-* extension[+] = Fasting-Inline
+* extension[copiesto][+] = ResultCopiesTo-DrFields
+* extension[requestFasting] = Fasting-Inline
 
 * requisition
   * type = $v2-0203#PGN
@@ -43,11 +43,11 @@ Usage: #example
   * display = "Dr Jane Doe"
 * encounter = Reference(Inline-2-Encounter)
 * insurance = Reference(Inline-1-Coverage)
-* supportingInfo[0] = Reference(Inline-3-PregnancyStatusObservation)
+* supportingInfo[pregnancystatus] = Reference(Inline-3-PregnancyStatusObservation)
   * display = "Pregnancy status"
-* supportingInfo[+] = Reference(Inline-4-DateOfLastMenstrualPeriod)
+* supportingInfo[lastmenstrualperiod] = Reference(Inline-4-DateOfLastMenstrualPeriod)
   * display = "Date of last menstrual period"
-* supportingInfo[+] = Reference(Inline-5-GestationalAgeObservation)
+* supportingInfo[gestationalage] = Reference(Inline-5-GestationalAgeObservation)
   * display = "Gestational Age by Last Menstrual Period (LMP)"
 * note.text = "a clinical note"
 * patientInstruction = "some patient instructions"

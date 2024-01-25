@@ -5,7 +5,7 @@ Description: "Diagnostic Organization Filler Sullivan Nicolaides"
 Usage:  #example
 
 * id = "67904f84-aeac-44e5-a9ec-50bbb1087977"
-* identifier[+] 
+* identifier[hpio] 
   * type
     * coding[+] = $v2-0203-AU#NOI
     * text = "HPI-O"

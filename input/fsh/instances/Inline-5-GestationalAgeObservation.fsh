@@ -8,8 +8,8 @@ Usage: #inline
 * status = #final
 * category = $observation-category#social-history "Social History"
 * code
-  * coding[0] = $sct#57036006 "Fetal gestational age"
-  * coding[+] = $loinc#11885-1 "Gestational age Estimated from last menstrual period"
+  * coding[loincGestationalAgeByLMP] = $loinc#11885-1 "Gestational age Estimated from last menstrual period"
+  * coding[+] = $sct#57036006 "Fetal gestational age"
   * text = "Gestational Age by Last Menstrual Period (LMP)"
 * subject = Reference(PatientSmith)
 * focus.display = "Baby of Hawkins, Maria Mrs."

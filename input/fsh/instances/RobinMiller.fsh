@@ -17,19 +17,19 @@ Usage: #example
 * deceasedBoolean = false
 * gender = #female
 * generalPractitioner = Reference(DrPennyWalkerAtSouthStephaniestad) "Dr Penney Walker @ South Stephaniestad"
-* identifier[+]
+* identifier[medicare]
   * period
     * end = "2025-11"
   * system = "http://ns.electronichealth.net.au/id/medicare-number"
   * type = $v2-0203#MC "Patient's Medicare Number"
     * text = "Patient's Medicare Number"
   * value = "56450729222"
-* identifier[+]
+* identifier[ihi]
   * system = "http://ns.electronichealth.net.au/id/hi/ihi/1.0"
   * type = $v2-0203#NI "National unique individual identifier"
     * text = "National unique individual identifier"
   * value = "8003608763762069"
-* identifier[+]
+* identifier[dva]
   * assigner
     * display = "Department of Veterans' Affairs"
     * type = "Organization"

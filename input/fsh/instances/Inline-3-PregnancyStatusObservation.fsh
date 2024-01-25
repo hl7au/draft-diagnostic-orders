@@ -6,7 +6,7 @@ Usage: #inline
   * status = #generated
 * id = "3"
 * status = #final
-* category = $observation-category#social-history "Social History"
+* category[socialHistory] = $observation-category#social-history "Social History"
 * code = $loinc#82810-3 "Pregnancy status"
   * text = "Pregnancy status"
 * subject = Reference(PatientSmith)

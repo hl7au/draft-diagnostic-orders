@@ -4,7 +4,7 @@ Title: "Dr Amber Barnes @ Ramirezview Medical Centre"
 Description: "Dr Amber Barnes @ Ramirezview Medical Centre"
 Usage: #example
 * active = true
-* identifier[+]
+* identifier[medicareProvider]
   * system = "http://ns.electronichealth.net.au/id/medicare-provider-number"
   * type = $v2-0203-AU#UPIN "Medicare Provider Number"
     * text = "Medicare Provider Number"

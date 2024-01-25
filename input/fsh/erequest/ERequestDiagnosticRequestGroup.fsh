@@ -5,7 +5,7 @@ Title: "Diagnostic RequestGroup"
 Description: "Diagnostic RequestGroup to reference all the individual ServiceRequests."
 
 * extension contains ResultCopiesTo named copiesto 0..* MS
-* extension contains ERequestServiceRequestFasting named request-fasting 0..1 MS
+* extension contains ERequestServiceRequestFasting named requestFasting 0..1 MS
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = Canonical(ERequestPlacerGroupNumber)
 * status from ERequestServiceRequestStatus (required)

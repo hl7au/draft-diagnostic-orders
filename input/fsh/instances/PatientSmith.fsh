@@ -12,7 +12,7 @@ Usage:  #example
   * prefix = "Mrs"
 * gender = #female
 * birthDate = "1997-01-20"
-* identifier[+]
+* identifier[medicare]
   * system = "http://ns.electronichealth.net.au/id/medicare-number"
   * value = "54164532692"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#MC

@@ -7,7 +7,7 @@ Description: "Diagnostic Service Request Base used for Pathology and Radiology. 
 * ^abstract = true
 
 * extension contains ResultCopiesTo named copiesto 0..* MS
-* extension contains ERequestServiceRequestFasting named request-fasting 0..1 MS
+* extension contains ERequestServiceRequestFasting named requestFasting 0..1 MS
 
 * requisition 1..1 
 * requisition ^type.profile = Canonical(ERequestPlacerGroupNumber)
@@ -69,8 +69,10 @@ Description: "Diagnostic Service Request Base used for Pathology and Radiology. 
 * contained ^slicing.discriminator.path = "$this"
 * contained contains 
     coverage 0..1 MS and
+    encounter 0..1 MS and
     supportingObs 0..* MS 
-* contained[coverage] only Coverage
+* contained[coverage] only ERequestCoverage
+* contained[encounter] only ERequestEncounter
 * contained[supportingObs] only Observation
 
 Invariant: narrative-for-supportinginfo

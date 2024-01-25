@@ -4,6 +4,7 @@ Title: "PractitionerRole for Urgent Communication"
 Description: "PractitionerRole for urgent contact of result."
 Usage: #example
 * practitioner = Reference(PractitionerPlacer) "Dr Jane Doe"
-* telecom.system = #phone
-* telecom.use = #mobile
-* telecom.value = "12345"
+* telecom
+  * system = #phone
+  * use = #mobile
+  * value = "12345"

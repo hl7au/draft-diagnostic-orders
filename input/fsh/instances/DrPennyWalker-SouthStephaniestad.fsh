@@ -4,12 +4,12 @@ Title: "Dr Penny Walker @ South Stephaniestad Medical Centre"
 Description: "Dr Penny Walker @ South Stephaniestad Medical Centre"
 Usage: #example
 * active = true
-* identifier[+]
+* identifier[medicareProvider]
   * system = "http://ns.electronichealth.net.au/id/medicare-provider-number"
   * type = $v2-0203-AU#UPIN "Medicare Provider Number"
     * text = "Medicare Provider Number"
   * value = "598754HY"
-* identifier[+]
+* identifier[doctorNumber]
   * assigner
     * display = "Betoota Pathology"
   * system = "http://ns.electronichealth.net.au/id/hpio-scoped/service-provider-individual/1.0/8003629538686011"

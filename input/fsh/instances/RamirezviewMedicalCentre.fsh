@@ -13,7 +13,7 @@ Usage: #example
   * text = "Flat 21 34 Erica Expressway\nRamirezview, SA, 2650"
   * type = #physical
   * use = #work
-* identifier[+]
+* identifier[hpio]
   * system = "http://ns.electronichealth.net.au/id/hi/hpio/1.0"
   * type = $v2-0203-AU#NOI "National Organisation Identifier"
     * text = "HPI-O"

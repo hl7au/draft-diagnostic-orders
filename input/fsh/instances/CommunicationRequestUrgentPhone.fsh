@@ -4,7 +4,7 @@ Description: "Diagnostic Communication Request Urgent Phone Call"
 Title: "Diagnostic Communication Request Urgent Phone Call"
 Usage:  #example
 * id = "66ad4c83-f611-11ed-a1fc-d2cbed391bcf"
-* contained[+] = PractitionerRolePhoneContact
+* contained[recipient] = PractitionerRolePhoneContact
 * groupIdentifier
   * type
     * coding[+] = $v2-0203#PGN

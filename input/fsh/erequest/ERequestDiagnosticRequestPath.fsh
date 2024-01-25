@@ -4,7 +4,7 @@ Id: erequest-diagnosticrequest-pathology
 Title: "Diagnostic Service Request Pathology"
 Description: "Diagnositic Service request for pathology."
 
-* extension contains ERequestServiceRequestRule3Exemption named request-rule3exemption 0..1 MS
+* extension contains ERequestServiceRequestRule3Exemption named requestRule3exemption 0..1 MS
 
 * code 1.. MS
 * code ^short = "Pathology test code or free text test name"

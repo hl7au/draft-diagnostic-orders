@@ -25,6 +25,6 @@ Usage:  #example
 * authoredOn = "2022-04-25"
 * requester = Reference(PractitionerRolePlacer)
 * insurance = Reference(Inline-1-Coverage)
-* contained[0] = Inline-1-Coverage
+* contained[coverage] = Inline-1-Coverage
 * encounter = Reference(Inline-2-Encounter)
-* contained[+] = Inline-2-Encounter
+* contained[encounter] = Inline-2-Encounter

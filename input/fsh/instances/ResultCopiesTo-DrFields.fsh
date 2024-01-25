@@ -3,7 +3,7 @@ InstanceOf: ResultCopiesTo
 Usage: #inline
 * url = Canonical(ResultCopiesTo)
 * valueReference
-  * identifier[0] 
+  * identifier[+] 
     * type
       * coding[+] = $v2-0203-AU#UPIN
       * text = "Medicare Provider Number"

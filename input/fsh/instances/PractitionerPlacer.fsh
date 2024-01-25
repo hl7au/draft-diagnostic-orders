@@ -5,7 +5,7 @@ Description: "Diagnostic Requester Practitioner"
 Usage:  #example
 
 * id = "75179ab5-684b-405e-a50c-a81359804d91"
-* identifier[+] 
+* identifier[hpii] 
   * type
     * coding[+] = $v2-0203#NPI
     * text = "HPI-I"
